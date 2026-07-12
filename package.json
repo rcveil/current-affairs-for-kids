@@ -1,0 +1,14 @@
+{
+  "name": "current-affairs-for-kids",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily Singapore news explained for 10-year-olds, with PSLE Composition and Oral vocabulary.",
+  "scripts": {
+    "generate": "node scripts/generate-news.mjs",
+    "serve": "python3 -m http.server 4173"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.88.0"
+  }
+}
