@@ -14,7 +14,10 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = path.join(here, "..", "data", "news.json");
+const DATA_DIR = path.join(here, "..", "data");
+const OUTPUT_PATH = path.join(DATA_DIR, "news.json");
+const DATED_PATH = path.join(DATA_DIR, `news-${new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" })}.json`);
+const INDEX_PATH = path.join(DATA_DIR, "index.json");
 const MODEL = "claude-opus-4-8";
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" }); // YYYY-MM-DD
@@ -114,7 +117,15 @@ async function main() {
   validate(data);
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(data, null, 2) + "\n");
-  console.log(`Wrote ${data.stories.length} stories for ${data.date} to ${OUTPUT_PATH}`);
+  fs.writeFileSync(DATED_PATH, JSON.stringify(data, null, 2) + "\n");
+  console.log(`Wrote ${data.stories.length} stories for ${data.date} → ${OUTPUT_PATH} + ${path.basename(DATED_PATH)}`);
+
+  // Keep a rolling index of available dates (newest first, max 30)
+  let index = [];
+  try { index = JSON.parse(fs.readFileSync(INDEX_PATH, "utf8")); } catch {}
+  if (!index.includes(today)) index.unshift(today);
+  fs.writeFileSync(INDEX_PATH, JSON.stringify(index.slice(0, 30), null, 2) + "\n");
+  console.log(`index.json updated — ${index.length} date(s) available.`);
   console.log(`Usage: in=${response.usage.input_tokens} out=${response.usage.output_tokens}`);
 }
 

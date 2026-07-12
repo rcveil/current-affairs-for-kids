@@ -1,0 +1,263 @@
+{
+  "date": "2026-07-12",
+  "generated_by": "seed",
+  "stories": [
+    {
+      "id": "iran-war-prices",
+      "emoji": "⚡",
+      "title": "Why Everything Costs More: The Iran War and Your Wallet",
+      "tag": "Money & Daily Life",
+      "headline_kid": "A war far away in the Middle East is making electricity, food and bus rides more expensive right here in Singapore.",
+      "summary": [
+        "In March 2026, a war broke out involving Iran, a country in the Middle East. Iranian forces closed the Strait of Hormuz — a narrow sea passage that one-fifth of the world's oil and natural gas must sail through. When ships cannot pass, countries everywhere receive less fuel, so fuel becomes much more expensive.",
+        "Singapore is affected badly because we import almost everything. About 95% of our electricity is made by burning imported natural gas, so household electricity prices have already risen by about 11%, and the government has warned of a sharper increase soon. Cooking gas, taxi fares and ride-hailing trips have also gone up.",
+        "Food is getting pricier too, in a sneaky way: natural gas is used to make fertiliser for crops. Expensive gas means expensive fertiliser, which means expensive vegetables, rice and meat — even food grown in other countries that we import.",
+        "The government says the war could also hurt Singapore's factories, tourism and food businesses. Leaders are looking at ways to help families cope, especially lower-income families, who spend a bigger share of their money on essentials like food and electricity."
+      ],
+      "lenses": {
+        "me": "Your favourite snacks, canteen food and bubble tea may cost a little more, and your parents might remind you to switch off the lights and aircon. Small savings at home really do add up now.",
+        "family": "Your family's electricity bill, groceries and transport cost more each month, so parents may need to budget more carefully or cut back on treats and outings for a while.",
+        "friends": "Some classmates' families may feel the squeeze more than others. Be kind — not everyone can afford the same things right now, and it's not something to tease anyone about.",
+        "nation": "Singapore imports almost all its energy and 90% of its food, so world events hit us fast. The government is releasing support measures and pushing harder for solar power and electricity imports so we depend less on gas.",
+        "world": "Countries everywhere are feeling the same pain, and many are speeding up their switch to renewable energy like solar and wind. The war shows how connected the world's economies are — trouble in one region ripples across the globe."
+      },
+      "compo_words": [
+        { "word": "exorbitant", "type": "adjective", "meaning": "unreasonably high in price", "example": "Mum gasped at the exorbitant price of the vegetables at the wet market." },
+        { "word": "ripple effect", "type": "noun", "meaning": "when one event causes a chain of other events", "example": "The war created a ripple effect that reached even our neighbourhood coffee shop." },
+        { "word": "scrimp", "type": "verb", "meaning": "to spend very carefully and save every cent", "example": "We had to scrimp and save so that we could still afford our year-end holiday." },
+        { "word": "vulnerable", "type": "adjective", "meaning": "easily harmed or affected", "example": "As a small island with no natural resources, Singapore is vulnerable to changes in world prices." },
+        { "word": "essential", "type": "noun/adjective", "meaning": "something absolutely necessary", "example": "Rice, electricity and water are essentials that every family needs." },
+        { "word": "resilient", "type": "adjective", "meaning": "able to recover quickly from difficulties", "example": "Singaporeans have always been resilient, finding ways to overcome every crisis together." }
+      ],
+      "compo_phrases": [
+        { "phrase": "tighten our belts", "meaning": "to spend less money than before", "example": "With prices soaring, my family decided to tighten our belts and eat out less often." },
+        { "phrase": "every cloud has a silver lining", "meaning": "even bad situations have a positive side", "example": "Every cloud has a silver lining — the energy crisis is teaching us not to waste electricity." },
+        { "phrase": "weather the storm", "meaning": "to survive a difficult period", "example": "By supporting one another, our family managed to weather the storm of rising costs." }
+      ],
+      "oral": {
+        "questions": [
+          "Prices of food and electricity have been rising. How has this affected you and your family?",
+          "What are some ways students like you can help save electricity at home and in school?",
+          "Do you think Singapore should grow more of its own food and make more of its own energy? Why?"
+        ],
+        "phrases": [
+          "From my own experience…",
+          "One way this affects my family is…",
+          "In my opinion, we should… because…",
+          "For example, at home I…",
+          "In conclusion, I feel that…"
+        ]
+      },
+      "sources": [
+        { "name": "EMA: Middle East Conflict's Impact on Prices of Electricity & Town Gas", "url": "https://www.ema.gov.sg/news-events/news/media-releases/2026/Middle-East-Conflicts-Impact-on-Prices-of-Electricity-And-Town-Gas" },
+        { "name": "Mothership: Iran war crisis to hike S'pore's electricity costs", "url": "https://mothership.sg/2026/04/iran-war-crisis-fallout-singapore-gan-kim-yong/" },
+        { "name": "The Star: Daily life in Singapore takes hit from Iran war", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/04/03/price-of-everything-is-increasing-daily-life-in-singapore-takes-hit-from-iran-war" }
+      ]
+    },
+    {
+      "id": "crow-population-boom",
+      "emoji": "🐦‍⬛",
+      "title": "Crows, Crows Everywhere! Singapore's Crow Boom",
+      "tag": "Nature & Environment",
+      "headline_kid": "Singapore's house crow numbers grew more than 20 times in under 10 years — to about 160,000 birds — and complaints have soared too.",
+      "summary": [
+        "Have you noticed more black birds cawing loudly around your neighbourhood? You're not imagining it. A National Parks Board (NParks) survey found about 160,000 house crows in Singapore in 2024 — more than 20 times the roughly 7,300 counted in 2016.",
+        "Complaints about crows tripled from about 5,000 cases in 2020 to about 15,000 in 2025. Reports of aggressive crows — like birds swooping at people's heads during nesting season — jumped from around 460 to more than 2,000 cases a year.",
+        "Why so many crows? House crows are clever and love our food waste. Overflowing bins, leftover food at hawker centres and people feeding birds give them an all-you-can-eat buffet, so they multiply quickly.",
+        "The authorities have been removing nests (almost 9,000 in 2025) and trapping crows, and from March 2026, NParks resumed crow shooting operations, which had stopped in 2020. Experts say the real long-term fix is managing food waste properly — if crows can't find easy food, their numbers will fall naturally."
+      ],
+      "lenses": {
+        "me": "You might see crows swooping near your school or void deck, especially during nesting season (May to June). Don't stare at nests or wave things at crows — walk away calmly, and never feed birds.",
+        "family": "Families can help by bagging food waste properly, clearing plates at hawker centres, and not leaving food out. If a crow attacks someone near your block, your family can report it to NParks at 1800-476-1600.",
+        "friends": "Share the science with your friends: crows are actually super smart — they recognise human faces and remember people who disturbed them! Respecting wildlife keeps both people and birds safe.",
+        "nation": "This is a city-planning puzzle for Singapore: how do we stay a green City in Nature while keeping animal populations balanced? It shows why everyone doing small things — like binning food waste — matters for the whole country.",
+        "world": "Cities worldwide, from India to Kenya, battle booming crow populations for the same reason: human food waste. Singapore's mix of science, prevention and control is watched by other cities facing the same problem."
+      },
+      "compo_words": [
+        { "word": "multiply", "type": "verb", "meaning": "to increase greatly in number", "example": "With so much leftover food around, the crows multiplied at an alarming rate." },
+        { "word": "aggressive", "type": "adjective", "meaning": "ready to attack or confront", "example": "The aggressive crow swooped down at the startled passer-by." },
+        { "word": "scavenge", "type": "verb", "meaning": "to search for food among waste", "example": "The crows scavenged through the overflowing rubbish bin for scraps." },
+        { "word": "coexist", "type": "verb", "meaning": "to live together peacefully", "example": "We must learn to coexist with the wildlife that shares our island." },
+        { "word": "culprit", "type": "noun", "meaning": "the cause of a problem; the one responsible", "example": "Food waste, not the birds themselves, is the real culprit behind the crow boom." },
+        { "word": "swoop", "type": "verb", "meaning": "to fly down suddenly and quickly", "example": "Without warning, the crow swooped down and snatched the bread from my hand." }
+      ],
+      "compo_phrases": [
+        { "phrase": "a bird's-eye view", "meaning": "a view from high above; an overall view", "example": "From the top floor, I had a bird's-eye view of the crows gathering below." },
+        { "phrase": "come home to roost", "meaning": "past mistakes eventually cause problems", "example": "Years of careless littering have come home to roost in the form of a crow explosion." },
+        { "phrase": "kill two birds with one stone", "meaning": "solve two problems with one action", "example": "Clearing our trays kills two birds with one stone — it keeps tables clean and starves the crows of easy food." }
+      ],
+      "oral": {
+        "questions": [
+          "Have you ever had an encounter with crows or other wild animals in your neighbourhood? What happened?",
+          "Some people think shooting crows is cruel, while others say it is necessary. What do you think?",
+          "What can students do to help reduce the food waste that attracts crows?"
+        ],
+        "phrases": [
+          "I remember a time when…",
+          "On one hand… but on the other hand…",
+          "I believe a better solution would be…",
+          "This reminds me of…",
+          "To sum up, I think…"
+        ]
+      },
+      "sources": [
+        { "name": "Mothership: S'pore to reintroduce crow shooting from March 2026", "url": "https://mothership.sg/2026/02/crow-shooting-resume-march-2026/" },
+        { "name": "NParks AVS: House Crows in Singapore", "url": "https://avs.nparks.gov.sg/wildlife/encountering-wildlife/house-crows-pigeons-javan-mynas/house-crows/" },
+        { "name": "The Independent: Crow complaints tripled, shooting operations return", "url": "https://theindependent.sg/singapore-crow-complaints-increased-from-5k-to-15k-triggers-the-return-of-crow-shooting-operations/" }
+      ]
+    },
+    {
+      "id": "typhoon-bavi-flights",
+      "emoji": "🌀",
+      "title": "Super Typhoon Bavi: Giant Storm Cancels Singapore Flights",
+      "tag": "Weather & Travel",
+      "headline_kid": "A monster storm as wide as France is battering Taiwan, Japan and China — and at least 20 flights from Singapore have been cancelled.",
+      "summary": [
+        "Super Typhoon Bavi, a gigantic storm roughly the width of France with winds over 200 km/h, is sweeping across East Asia. It has hit Japan and is moving close to Taiwan and China, forcing airports and railways there to shut down.",
+        "Even though the storm is thousands of kilometres from Singapore, Changi Airport reported at least 20 flights cancelled on 11 and 12 July. Singapore Airlines cancelled several flights to and from Shanghai, and Scoot, China Airlines, EVA Air and other airlines cancelled flights to Taipei and Shanghai.",
+        "Affected passengers are being moved to other flights or given refunds. Airlines are telling travellers to check their flight status before heading to the airport, because the storm's path can change quickly.",
+        "Scientists say a warmer climate can make typhoons stronger, because storms draw their energy from warm ocean water. That's one more reason the world is working to slow down climate change."
+      ],
+      "lenses": {
+        "me": "If your family planned a holiday to Taiwan, Japan, Shanghai or Hong Kong, your trip might be delayed or cancelled. Storms are one reason grown-ups buy travel insurance!",
+        "family": "Families travelling this week should check flight status online before going to Changi, and keep the airline's app handy. A cancelled flight usually means a free rebooking or a refund.",
+        "friends": "Some friends may be stuck overseas or have their long-awaited trips cancelled. A kind message goes a long way when someone's holiday plans fall apart.",
+        "nation": "Singapore doesn't get typhoons because we sit almost on the equator, where these storms can't form — lucky us! But as an air travel hub, our airport and airlines feel every big storm in the region.",
+        "world": "Millions of people across Taiwan, Japan and China are sheltering from the storm. Warmer oceans caused by climate change can fuel stronger typhoons, so cutting pollution is a mission for every country."
+      },
+      "compo_words": [
+        { "word": "torrential", "type": "adjective", "meaning": "(of rain) falling extremely heavily", "example": "Torrential rain lashed against the windows as the typhoon roared past." },
+        { "word": "stranded", "type": "adjective", "meaning": "stuck somewhere, unable to leave", "example": "Hundreds of travellers were stranded at the airport when their flights were cancelled." },
+        { "word": "howl", "type": "verb", "meaning": "(of wind) to make a long, loud crying sound", "example": "The wind howled like a wild animal outside our hotel room." },
+        { "word": "devastate", "type": "verb", "meaning": "to destroy or damage badly", "example": "The super typhoon devastated coastal villages in its path." },
+        { "word": "evacuate", "type": "verb", "meaning": "to move people away from danger", "example": "Thousands of residents were evacuated before the storm made landfall." },
+        { "word": "anxious", "type": "adjective", "meaning": "worried and nervous", "example": "We grew anxious as the departure board flashed 'CANCELLED' in red letters." }
+      ],
+      "compo_phrases": [
+        { "phrase": "the calm before the storm", "meaning": "a quiet period before trouble begins", "example": "The eerie stillness that morning was the calm before the storm." },
+        { "phrase": "come rain or shine", "meaning": "no matter what happens", "example": "Come rain or shine, the airport staff worked tirelessly to help stranded passengers." },
+        { "phrase": "a blessing in disguise", "meaning": "something that seems bad but turns out well", "example": "The cancelled flight was a blessing in disguise — we avoided the worst of the storm." }
+      ],
+      "oral": {
+        "questions": [
+          "Have you or your family ever had a trip delayed or cancelled? How did you feel and what did you do?",
+          "Why do you think it is important to stay calm during emergencies like storms?",
+          "Singapore does not have typhoons, but we have haze and flash floods. How can we prepare for bad weather?"
+        ],
+        "phrases": [
+          "I vividly remember when…",
+          "At first I felt… but later…",
+          "It is important to… because…",
+          "If I were in that situation, I would…",
+          "All in all…"
+        ]
+      },
+      "sources": [
+        { "name": "The Star: At least 20 flights from Singapore cancelled as Typhoon Bavi hits Japan", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/07/11/at-least-20-flights-from-singapore-cancelled-as-typhoon-bavi-hits-japan-approaches-taiwan-and-china" },
+        { "name": "Mothership: 16 SIA & Scoot flights cancelled due to Super Typhoon Bavi", "url": "https://mothership.sg/2026/07/singapore-airlines-scoot-flights-cancelled-typhoon-bavi/" },
+        { "name": "Singapore Airlines: Advisory on flights affected by Super Typhoon Bavi", "url": "https://www.singaporeair.com/en_UK/gb/corporate/newsroom/newsalert-listing/advisory-on-singapore-airlines-flights-affected-by-super-typhoon/" }
+      ]
+    },
+    {
+      "id": "tharman-malaysia-visit",
+      "emoji": "🤝",
+      "title": "President Tharman Visits Malaysia: Why Good Neighbours Matter",
+      "tag": "Singapore & The World",
+      "headline_kid": "President Tharman Shanmugaratnam begins a four-day state visit to Malaysia today, invited by Malaysia's King.",
+      "summary": [
+        "President Tharman Shanmugaratnam starts a four-day state visit to Malaysia on 12 July, at the invitation of Malaysia's King, Sultan Ibrahim. A state visit is the highest form of friendly visit between countries, full of ceremony and important meetings.",
+        "Singapore and Malaysia are like close siblings — we were even one country until 1965! Today, thousands of people cross the Causeway daily for work and school, much of our food and water comes through Malaysia, and our economies are deeply connected.",
+        "In an interview, President Tharman said the two countries succeed by 'addressing differences squarely' — talking honestly about disagreements instead of ignoring them — while always working to strengthen the friendship.",
+        "The two countries plan to deepen cooperation in exciting areas: the new Johor-Singapore Special Economic Zone, renewable energy (like importing clean electricity), and developing talent. Trust built over 60 years, he said, is the foundation for what comes next."
+      ],
+      "lenses": {
+        "me": "Malaysia is probably where you've had your cheapest holidays, your favourite food trips, or even where some of your relatives live. Good relations keep those trips easy and safe.",
+        "family": "Many Singaporean families shop, eat or have relatives in Johor Bahru. Smooth ties mean easier border crossings — and future projects like the JB-Singapore RTS train link in 2027 will make trips even faster.",
+        "friends": "You may have classmates whose parents are Malaysian or who travel across the Causeway weekly. Our two countries' friendship is really millions of small friendships like yours.",
+        "nation": "Malaysia is one of Singapore's biggest trading partners and supplies much of our water and food. Strong ties mean security, jobs and new opportunities like the Special Economic Zone in Johor.",
+        "world": "When neighbouring countries talk honestly and cooperate instead of quarrelling, the whole region becomes more peaceful and richer. Singapore and Malaysia are showing ASEAN and the world how neighbours can disagree yet stay friends."
+      },
+      "compo_words": [
+        { "word": "diplomacy", "type": "noun", "meaning": "managing relationships between countries through discussion", "example": "Through patient diplomacy, the two nations settled their disagreement peacefully." },
+        { "word": "mutual", "type": "adjective", "meaning": "shared by two or more parties", "example": "Their friendship was built on mutual respect and trust." },
+        { "word": "strengthen", "type": "verb", "meaning": "to make stronger", "example": "The visit will strengthen the bond between the two neighbouring countries." },
+        { "word": "cooperation", "type": "noun", "meaning": "working together towards a shared goal", "example": "The project succeeded because of the close cooperation between both teams." },
+        { "word": "milestone", "type": "noun", "meaning": "an important event or achievement", "example": "The signing of the agreement marked a major milestone in their friendship." },
+        { "word": "cordial", "type": "adjective", "meaning": "warm and friendly", "example": "The leaders exchanged cordial greetings at the palace." }
+      ],
+      "compo_phrases": [
+        { "phrase": "bury the hatchet", "meaning": "to end a quarrel and become friends again", "example": "After the disagreement, the two friends decided to bury the hatchet." },
+        { "phrase": "see eye to eye", "meaning": "to agree with someone", "example": "Even best friends do not always see eye to eye, but they can still respect each other." },
+        { "phrase": "extend an olive branch", "meaning": "to make an offer of peace", "example": "He extended an olive branch by inviting his rival to work together on the project." }
+      ],
+      "oral": {
+        "questions": [
+          "Have you visited Malaysia before? Share what you enjoyed or noticed there.",
+          "Why do you think it is important for neighbours — whether countries, or people living next door — to get along?",
+          "When you disagree with a friend, is it better to talk about it honestly or keep quiet? Why?"
+        ],
+        "phrases": [
+          "During my trip to…",
+          "Neighbours are important because…",
+          "I have learnt that honesty…",
+          "A good example of this is…",
+          "Therefore, I believe…"
+        ]
+      },
+      "sources": [
+        { "name": "The Star: Singapore, Malaysia partnership driven by mutual respect — President Tharman", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/07/12/singapore-malaysia-partnership-driven-by-mutual-respect-understanding-of-each-others-interests-president-tharman" },
+        { "name": "Bernama interview with President Tharman", "url": "https://bernama.com/en/world/index.php/videos/news.php?id=2573781" }
+      ]
+    },
+    {
+      "id": "coffee-championship",
+      "emoji": "☕",
+      "title": "Brewing Champions: Singapore's Best Coffee Makers Compete",
+      "tag": "People & Culture",
+      "headline_kid": "67 local baristas, latte artists and coffee tasters battle it out at the Singapore National Coffee Championship from 15 to 17 July.",
+      "summary": [
+        "The Singapore National Coffee Championship returns this week, from 15 to 17 July at the Sands Expo & Convention Centre. 67 of Singapore's most talented coffee professionals will compete in events like barista skills, latte art and 'cup tasting' — where competitors identify coffees by taste alone, like detectives of flavour!",
+        "Winners earn the right to represent Singapore at the World Coffee Championships, competing against the best baristas on the planet.",
+        "Being a champion barista takes years of practice: understanding coffee beans from different countries, controlling water temperature to the exact degree, and pouring milk with surgeon-like steadiness to draw hearts and swans on top of a latte.",
+        "The competition also celebrates Singapore's own coffee culture — from traditional kopitiam kopi pulled through a cloth 'sock', to modern specialty cafes. Old and new coffee worlds live side by side on our little island."
+      ],
+      "lenses": {
+        "me": "This is proof that any skill — even making a drink — can become a craft, a career and even a world championship if you practise hard enough. What everyday skill could you master?",
+        "family": "Maybe your grandparents love kopi-O from the kopitiam while your parents queue for fancy lattes. This event celebrates both — a fun topic to chat about at your next family breakfast.",
+        "friends": "You and your friends can spot latte art at cafes or learn how kopi is made the traditional way. (You're still a bit young for the caffeine, though!)",
+        "nation": "Singapore's food and drink scene is world-famous, and competitions like this train local talent to fly our flag on the world stage — just like our hawker culture earning UNESCO recognition.",
+        "world": "Coffee connects farmers in Brazil, Ethiopia and Vietnam to drinkers everywhere. When we appreciate coffee as a craft, we also learn to value the many hands around the world that grow and brew it."
+      },
+      "compo_words": [
+        { "word": "meticulous", "type": "adjective", "meaning": "extremely careful about details", "example": "The meticulous barista measured every gram of coffee before brewing." },
+        { "word": "aromatic", "type": "adjective", "meaning": "having a pleasant, noticeable smell", "example": "The aromatic scent of freshly brewed kopi filled the bustling kopitiam." },
+        { "word": "perseverance", "type": "noun", "meaning": "continuing to try despite difficulty", "example": "Years of perseverance finally earned her the national championship title." },
+        { "word": "passion", "type": "noun", "meaning": "a very strong love for something", "example": "His passion for coffee turned a simple hobby into a lifelong career." },
+        { "word": "heritage", "type": "noun", "meaning": "traditions passed down through generations", "example": "The kopitiam is a treasured part of Singapore's heritage." },
+        { "word": "savour", "type": "verb", "meaning": "to enjoy something slowly and completely", "example": "Grandpa closed his eyes to savour his first sip of kopi." }
+      ],
+      "compo_phrases": [
+        { "phrase": "practice makes perfect", "meaning": "doing something repeatedly makes you better at it", "example": "Practice makes perfect — she poured a thousand lattes before her art looked like a swan." },
+        { "phrase": "wake up and smell the coffee", "meaning": "to face reality and pay attention", "example": "It's time to wake up and smell the coffee — success never comes without hard work." },
+        { "phrase": "put one's heart and soul into", "meaning": "to give something all your effort and enthusiasm", "example": "He put his heart and soul into perfecting every single cup." }
+      ],
+      "oral": {
+        "questions": [
+          "What is a skill or hobby you would love to master? What are you doing to improve?",
+          "Why do you think traditional kopitiams are worth preserving in modern Singapore?",
+          "Do you think competitions bring out the best in people? Share your experience."
+        ],
+        "phrases": [
+          "A skill I am passionate about is…",
+          "I practise by…",
+          "Traditions matter because…",
+          "From my experience in competitions…",
+          "In a nutshell…"
+        ]
+      },
+      "sources": [
+        { "name": "The Honeycombers: What's happening in Singapore this week", "url": "https://thehoneycombers.com/singapore/whats-happening-in-singapore-lifestyle-news/" }
+      ]
+    }
+  ]
+}
