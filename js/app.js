@@ -61,6 +61,7 @@ async function loadIndex() {
 // --- Favourites (localStorage) ---
 
 const FAV_KEY = "cak-favorites";
+const VOCAB_KEY = "cak-fav-vocab";
 
 function getFavourites() {
   try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); } catch { return []; }
@@ -76,6 +77,24 @@ function toggleFavourite(fav) {
   if (idx >= 0) favs.splice(idx, 1);
   else favs.unshift(fav);
   localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+}
+
+// --- Vocab Favourites (localStorage) ---
+
+function getVocabFavs() {
+  try { return JSON.parse(localStorage.getItem(VOCAB_KEY) || "[]"); } catch { return []; }
+}
+
+function isVocabFav(key) {
+  return getVocabFavs().some(v => v.key === key);
+}
+
+function toggleVocabFav(item) {
+  const favs = getVocabFavs();
+  const idx = favs.findIndex(v => v.key === item.key);
+  if (idx >= 0) favs.splice(idx, 1);
+  else favs.unshift(item);
+  localStorage.setItem(VOCAB_KEY, JSON.stringify(favs));
 }
 
 // --- Nav component ---
@@ -188,13 +207,14 @@ async function renderFavourites() {
   const allDates = await loadIndex();
   const nav = renderDateNav(allDates, null);
   const favs = getFavourites();
+  const vocabFavs = getVocabFavs();
 
-  if (favs.length === 0) {
+  if (favs.length === 0 && vocabFavs.length === 0) {
     app.innerHTML = nav + `
       <div class="empty-favs">
         <div class="empty-emoji">⭐</div>
-        <h2>No saved stories yet</h2>
-        <p>Tap the ⭐ on any story card to save it here.</p>
+        <h2>No saved items yet</h2>
+        <p>Tap ⭐ on any story card to save it, or ⭐ on any power word or phrase to save it here.</p>
         <a class="back-link" href="#/">Browse today's news</a>
       </div>`;
     setHeaderDate("Saved Stories");
@@ -216,23 +236,57 @@ async function renderFavourites() {
       <span class="read-more">Read&nbsp;→</span>
     </a>`).join("");
 
-  app.innerHTML = nav + `
+  const vocabItems = vocabFavs.map(v => v.type === "word" ? `
+    <div class="vocab-item">
+      <div class="vocab-row">
+        <div><span class="word">${esc(v.word)}</span><span class="word-type">(${esc(v.wordType)})</span></div>
+        <button class="vocab-star-btn vocab-star-active" data-vkey="${esc(v.key)}" title="Unsave word" aria-label="Unsave word">⭐</button>
+      </div>
+      <div class="meaning">${esc(v.meaning)}</div>
+      <div class="example">${esc(v.example)}</div>
+      <div class="vocab-source">from <a href="#/story/${esc(v.storyDate)}/${esc(v.storyId)}">${esc(v.storyTitle)}</a></div>
+    </div>` : `
+    <div class="vocab-item phrase-item">
+      <div class="vocab-row">
+        <span class="word">${esc(v.phrase)}</span>
+        <button class="vocab-star-btn vocab-star-active" data-vkey="${esc(v.key)}" title="Unsave phrase" aria-label="Unsave phrase">⭐</button>
+      </div>
+      <div class="meaning">${esc(v.meaning)}</div>
+      <div class="example">${esc(v.example)}</div>
+      <div class="vocab-source">from <a href="#/story/${esc(v.storyDate)}/${esc(v.storyId)}">${esc(v.storyTitle)}</a></div>
+    </div>`).join("");
+
+  const storiesSection = favs.length > 0 ? `
     <div class="intro intro-favs">
       <h1>Your Saved Stories ⭐</h1>
       <p>Tap ⭐ again on any card to unsave it.</p>
     </div>
-    <div class="story-list">${cards}</div>`;
+    <div class="story-list">${cards}</div>` : "";
+
+  const vocabSection = vocabFavs.length > 0 ? `
+    <div class="section vocab-favs-section">
+      <h2>📚 Your Saved Words &amp; Phrases</h2>
+      <div class="vocab-list">${vocabItems}</div>
+    </div>` : "";
+
+  app.innerHTML = nav + storiesSection + vocabSection;
 
   setHeaderDate("Saved Stories");
   window.scrollTo(0, 0);
 
-  // On unsave, re-render the whole page
   document.querySelectorAll(".fav-btn").forEach(btn => {
     btn.addEventListener("click", e => {
       e.preventDefault();
       e.stopPropagation();
       const { date, id } = btn.dataset;
       toggleFavourite({ date, id });
+      renderFavourites();
+    });
+  });
+
+  document.querySelectorAll(".vocab-star-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      toggleVocabFav({ key: btn.dataset.vkey });
       renderFavourites();
     });
   });
@@ -266,18 +320,30 @@ async function renderStory(date, id) {
       <h3>${l.emoji} ${l.label}</h3>
       <p>${esc(s.lenses[l.key])}</p>
     </div>`).join("");
-  const words    = (s.compo_words || []).map(w => `
+  const words    = (s.compo_words || []).map(w => {
+    const vkey = `word:${w.word}`;
+    return `
     <div class="vocab-item">
-      <span class="word">${esc(w.word)}</span><span class="word-type">(${esc(w.type)})</span>
+      <div class="vocab-row">
+        <div><span class="word">${esc(w.word)}</span><span class="word-type">(${esc(w.type)})</span></div>
+        <button class="vocab-star-btn${isVocabFav(vkey) ? " vocab-star-active" : ""}" data-vkey="${esc(vkey)}" data-vtype="word" title="Save word" aria-label="Save word">⭐</button>
+      </div>
       <div class="meaning">${esc(w.meaning)}</div>
       <div class="example">${esc(w.example)}</div>
-    </div>`).join("");
-  const phrases  = (s.compo_phrases || []).map(p => `
+    </div>`;
+  }).join("");
+  const phrases  = (s.compo_phrases || []).map(p => {
+    const vkey = `phrase:${p.phrase}`;
+    return `
     <div class="vocab-item phrase-item">
-      <span class="word">${esc(p.phrase)}</span>
+      <div class="vocab-row">
+        <span class="word">${esc(p.phrase)}</span>
+        <button class="vocab-star-btn${isVocabFav(vkey) ? " vocab-star-active" : ""}" data-vkey="${esc(vkey)}" data-vtype="phrase" title="Save phrase" aria-label="Save phrase">⭐</button>
+      </div>
       <div class="meaning">${esc(p.meaning)}</div>
       <div class="example">${esc(p.example)}</div>
-    </div>`).join("");
+    </div>`;
+  }).join("");
   const oralQs   = (s.oral?.questions || []).map(q => `<div class="oral-question">${esc(q)}</div>`).join("");
   const starters = (s.oral?.phrases   || []).map(p => `<span class="starter-chip">${esc(p)}</span>`).join("");
   const sources  = (s.sources || []).map(src => `<li><a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.name)}</a></li>`).join("");
@@ -344,6 +410,24 @@ async function renderStory(date, id) {
     const btn = document.querySelector(".fav-btn-detail");
     btn.classList.toggle("fav-active", now);
     btn.textContent = now ? "⭐ Saved" : "☆ Save";
+  });
+
+  document.querySelectorAll(".vocab-star-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const { vkey, vtype } = btn.dataset;
+      let item;
+      if (vtype === "word") {
+        const w = (s.compo_words || []).find(x => `word:${x.word}` === vkey);
+        if (w) item = { key: vkey, type: "word", word: w.word, wordType: w.type, meaning: w.meaning, example: w.example, storyTitle: s.title, storyDate: date, storyId: s.id };
+      } else {
+        const p = (s.compo_phrases || []).find(x => `phrase:${x.phrase}` === vkey);
+        if (p) item = { key: vkey, type: "phrase", phrase: p.phrase, meaning: p.meaning, example: p.example, storyTitle: s.title, storyDate: date, storyId: s.id };
+      }
+      if (item) {
+        toggleVocabFav(item);
+        btn.classList.toggle("vocab-star-active", isVocabFav(vkey));
+      }
+    });
   });
 }
 
