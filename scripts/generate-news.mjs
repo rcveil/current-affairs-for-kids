@@ -18,7 +18,7 @@ const DATA_DIR = path.join(here, "..", "data");
 const OUTPUT_PATH = path.join(DATA_DIR, "news.json");
 const DATED_PATH = path.join(DATA_DIR, `news-${new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" })}.json`);
 const INDEX_PATH = path.join(DATA_DIR, "index.json");
-const MODEL = "claude-opus-4-8";
+const MODEL = "claude-sonnet-5";
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" }); // YYYY-MM-DD
 
@@ -87,10 +87,10 @@ async function main() {
   for (let attempt = 0; attempt < 6; attempt++) {
     const stream = client.messages.stream({
       model: MODEL,
-      max_tokens: 64000,
+      max_tokens: 16000,
       thinking: { type: "adaptive" },
       system: SYSTEM_PROMPT,
-      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 12 }],
+      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 8 }],
       messages,
     });
     response = await stream.finalMessage();
