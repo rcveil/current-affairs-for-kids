@@ -88,7 +88,6 @@ async function main() {
     const stream = client.messages.stream({
       model: MODEL,
       max_tokens: 32000,
-      thinking: { type: "adaptive" },
       system: SYSTEM_PROMPT,
       tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 8 }],
       messages,
