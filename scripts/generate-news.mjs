@@ -84,12 +84,12 @@ async function main() {
 
   // Web search runs in a server-side loop; on pause_turn, append the assistant
   // turn and re-send so the server resumes where it left off.
-  for (let attempt = 0; attempt < 6; attempt++) {
+  for (let attempt = 0; attempt < 3; attempt++) {
     const stream = client.messages.stream({
       model: MODEL,
       max_tokens: 32000,
       system: SYSTEM_PROMPT,
-      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 8 }],
+      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 3 }],
       messages,
     });
     response = await stream.finalMessage();
