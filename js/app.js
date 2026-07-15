@@ -3,6 +3,7 @@
 
 const app = document.getElementById("app");
 const TODAY = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" }); // YYYY-MM-DD
+let calMonth = TODAY.slice(0, 7); // "YYYY-MM" — which month the calendar shows
 
 const LENSES = [
   { key: "me",      label: "For Me",          emoji: "🧒",          cls: "lens-me" },
@@ -97,27 +98,64 @@ function toggleVocabFav(item) {
   localStorage.setItem(VOCAB_KEY, JSON.stringify(favs));
 }
 
-// --- Nav component ---
+// --- Calendar nav ---
 
-function renderDateNav(dates, activeDate) {
+function renderCalendarNav(availableDates, activeDate) {
+  const [year, month] = calMonth.split("-").map(Number);
+  const firstDay = new Date(year, month - 1, 1);
+  const totalDays = new Date(year, month, 0).getDate();
+  const startWeekday = firstDay.getDay(); // 0 = Sun
+
+  const availableSet = new Set(availableDates);
+  const monthLabel = firstDay.toLocaleDateString("en-SG", { month: "long", year: "numeric" });
+
+  const prevM = month === 1 ? `${year - 1}-12` : `${year}-${String(month - 1).padStart(2, "0")}`;
+  const nextM = month === 12 ? `${year + 1}-01` : `${year}-${String(month + 1).padStart(2, "0")}`;
+
+  const cells = [];
+  for (let i = 0; i < startWeekday; i++) cells.push(`<div class="cal-day"></div>`);
+  for (let d = 1; d <= totalDays; d++) {
+    const iso = `${calMonth}-${String(d).padStart(2, "0")}`;
+    const hasNews = availableSet.has(iso);
+    const isActive = iso === activeDate;
+    const isToday = iso === TODAY;
+    let cls = "cal-day";
+    if (hasNews) cls += " cal-day-has-news";
+    if (isActive) cls += " cal-day-active";
+    if (isToday && !isActive) cls += " cal-day-today";
+    const href = iso === TODAY ? "#/" : `#/date/${iso}`;
+    cells.push(hasNews
+      ? `<a class="${cls}" href="${href}">${d}</a>`
+      : `<div class="${cls}">${d}</div>`);
+  }
+
   const favCount = getFavourites().length;
   const favActive = window.location.hash === "#/favorites";
-
-  const chips = dates.map(d => {
-    const label = d === TODAY ? "Today" : formatDateShort(d);
-    const href  = d === TODAY ? "#/" : `#/date/${d}`;
-    const cls   = d === activeDate ? "date-chip date-chip-active" : "date-chip";
-    return `<a class="${cls}" href="${href}">${esc(label)}</a>`;
-  }).join("");
-
-  const badge = favCount > 0 ? ` <span class="fav-count">${favCount}</span>` : "";
-  const favCls = `date-chip fav-tab${favActive ? " date-chip-active" : ""}`;
+  const badge = favCount > 0 ? `<span class="fav-count">${favCount}</span>` : "";
+  const favCls = `cal-fav-btn${favActive ? " cal-fav-active" : ""}`;
 
   return `
-    <nav class="date-nav">
-      <div class="date-chips">${chips}</div>
-      <a class="${favCls}" href="#/favorites">⭐ Saved${badge}</a>
-    </nav>`;
+    <div class="cal-nav">
+      <div class="cal-header">
+        <button class="cal-month-btn" data-month="${prevM}">&#8249;</button>
+        <span class="cal-month-label">${monthLabel}</span>
+        <button class="cal-month-btn" data-month="${nextM}">&#8250;</button>
+        <a class="${favCls}" href="#/favorites">⭐ Saved${badge}</a>
+      </div>
+      <div class="cal-weekdays">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+      <div class="cal-grid">${cells.join("")}</div>
+    </div>`;
+}
+
+function bindCalendarNav(rerenderFn) {
+  document.querySelectorAll(".cal-month-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      calMonth = btn.dataset.month;
+      rerenderFn();
+    });
+  });
 }
 
 // --- Fav button helpers ---
@@ -158,16 +196,18 @@ function bindCardFavBtns(storiesByDate) {
 
 async function renderHome(date) {
   app.innerHTML = `<div class="loading"><div class="loading-emoji">📰</div><p>Loading stories…</p></div>`;
+  calMonth = date.slice(0, 7);
 
   const [data, allDates] = await Promise.all([
     loadStories(date).catch(() => null),
     loadIndex(),
   ]);
 
-  const nav = renderDateNav(allDates, date);
+  const nav = renderCalendarNav(allDates, date);
 
   if (!data) {
     app.innerHTML = nav + `<div class="error-box">No stories found for this date. 😢 <a href="#/">Back to today's news</a></div>`;
+    bindCalendarNav(() => renderHome(date));
     return;
   }
 
@@ -197,6 +237,7 @@ async function renderHome(date) {
   setHeaderDate("News for " + formatDate(data.date || date));
   window.scrollTo(0, 0);
   bindCardFavBtns({ [date]: stories });
+  bindCalendarNav(() => renderHome(date));
 }
 
 // --- Favourites page ---
@@ -205,7 +246,7 @@ async function renderFavourites() {
   app.innerHTML = `<div class="loading"><div class="loading-emoji">⭐</div><p>Loading saved stories…</p></div>`;
 
   const allDates = await loadIndex();
-  const nav = renderDateNav(allDates, null);
+  const nav = renderCalendarNav(allDates, null);
   const favs = getFavourites();
   const vocabFavs = getVocabFavs();
 
@@ -218,6 +259,7 @@ async function renderFavourites() {
         <a class="back-link" href="#/">Browse today's news</a>
       </div>`;
     setHeaderDate("Saved Stories");
+    bindCalendarNav(() => renderFavourites());
     return;
   }
 
@@ -273,6 +315,7 @@ async function renderFavourites() {
 
   setHeaderDate("Saved Stories");
   window.scrollTo(0, 0);
+  bindCalendarNav(() => renderFavourites());
 
   document.querySelectorAll(".fav-btn").forEach(btn => {
     btn.addEventListener("click", e => {
