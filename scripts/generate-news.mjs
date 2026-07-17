@@ -69,13 +69,27 @@ JSON schema:
   ]
 }`;
 
-const USER_PROMPT = `Today's date in Singapore is ${today}. Search the web for today's (and the past 1-2 days') top news relevant to Singapore — check sources like CNA, The Straits Times, Mothership, Today Online and major wire services. Then produce the JSON described in your instructions, with exactly 5 stories.`;
-
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) {
     console.error("ANTHROPIC_API_KEY is not set — aborting without changes.");
     process.exit(1);
   }
+
+  // Load recent story titles (~150 tokens) so the model avoids repeating them.
+  let recentContext = "";
+  try {
+    const index = JSON.parse(fs.readFileSync(INDEX_PATH, "utf8"));
+    const lines = [];
+    for (const date of index.slice(0, 3)) {
+      try {
+        const d = JSON.parse(fs.readFileSync(path.join(DATA_DIR, `news-${date}.json`), "utf8"));
+        for (const s of d.stories || []) lines.push(`- ${date}: ${s.title}`);
+      } catch {}
+    }
+    if (lines.length) recentContext = `\n\nStories already published in the past 3 days — only cover a similar topic if there is a significant NEW development today:\n${lines.join("\n")}`;
+  } catch {}
+
+  const USER_PROMPT = `Today's date in Singapore is ${today}. Search the web for today's top news relevant to Singapore — check sources like CNA, The Straits Times, Mothership, Today Online and major wire services. Then produce the JSON described in your instructions, with exactly 5 stories.${recentContext}`;
 
   const client = new Anthropic();
 
