@@ -3,489 +3,363 @@
   "generated_by": "claude",
   "stories": [
     {
-      "id": "circle-line-loop-complete",
-      "emoji": "🚇",
-      "title": "Singapore's MRT Circle Line Finally Becomes a Full Loop!",
-      "tag": "Weather & Travel",
-      "headline_kid": "After more than 30 years of planning, trains can now travel all the way around in one big circle, with no need to change lines halfway!",
-      "summary": [
-        "Three brand-new MRT stations — Keppel, Cantonment and Prince Edward Road — opened for passengers on 12 July 2026. This finally joined up the last missing piece of the Circle Line, like fitting in the final piece of a round jigsaw puzzle. It took engineers and planners more than three decades to complete this loop.",
-        "Before this, the Circle Line was shaped like a horseshoe, with a gap between HarbourFront and Marina Bay. Now that the gap is closed, the whole line stretches 39 kilometres and has 33 stations. Twelve of these are interchange stations, which means commuters can hop over to almost every other MRT line in Singapore without walking too far.",
-        "More than 10,000 commuters are expected to enjoy shorter, more direct journeys because of the new stations. During peak hours, trains will arrive roughly every 2 minutes on the main loop, so waiting times should feel shorter too. Before the official opening, LTA even held a fun preview day with free train rides, a stamp rally and a photo hunt so families could explore the new stations first.",
-        "Transport officials say the completed loop does more than save time — it also opens up new areas for future homes, shops and jobs near the new stations. It's a proud moment for Singapore, showing how patient planning over many years can make daily travel easier for everyone."
-      ],
-      "lenses": {
-        "me": "If you take the MRT to school, tuition or your grandparents' house, you might now reach places faster with fewer changes between trains.",
-        "family": "Your parents could save precious minutes on their commute to work, which might mean a little more family time at home in the evenings.",
-        "friends": "Classmates living near Keppel, Cantonment or Prince Edward Road can now walk straight to an MRT station instead of taking a longer bus ride.",
-        "nation": "It shows how Singapore plans big projects patiently over many years, thinking about how the whole country will grow, not just one small area.",
-        "world": "Cities everywhere are watching how Singapore builds and manages its train network, since good public transport is a challenge for busy cities all over the world."
-      },
-      "compo_words": [
-        {
-          "word": "connectivity",
-          "type": "noun",
-          "meaning": "how easily people or places are linked together",
-          "example": "The new stations improved the connectivity between different parts of Singapore."
-        },
-        {
-          "word": "unveil",
-          "type": "verb",
-          "meaning": "to show something to the public for the first time",
-          "example": "The Land Transport Authority unveiled the three new stations before they opened."
-        },
-        {
-          "word": "milestone",
-          "type": "noun",
-          "meaning": "an important point or achievement in a long journey",
-          "example": "Completing the Circle Line loop was a huge milestone for Singapore's transport system."
-        },
-        {
-          "word": "interchange",
-          "type": "noun",
-          "meaning": "a station where passengers can switch to another train line",
-          "example": "She changed trains quickly at the interchange station."
-        },
-        {
-          "word": "commute",
-          "type": "noun",
-          "meaning": "the regular journey a person makes to work or school",
-          "example": "His daily commute became ten minutes shorter after the new line opened."
-        },
-        {
-          "word": "resilient",
-          "type": "adjective",
-          "meaning": "able to keep working well even when things go wrong",
-          "example": "A resilient train network gives commuters other routes to use if one line breaks down."
-        }
-      ],
-      "compo_phrases": [
-        {
-          "phrase": "come full circle",
-          "meaning": "to finally complete something after a long process",
-          "example": "After thirty years of planning, the Circle Line has finally come full circle."
-        },
-        {
-          "phrase": "in the pipeline",
-          "meaning": "being planned or prepared for the future",
-          "example": "More new MRT stations are already in the pipeline for the next few years."
-        },
-        {
-          "phrase": "get from A to B",
-          "meaning": "to travel from one place to another",
-          "example": "The new stations make it much easier for residents to get from A to B."
-        }
-      ],
-      "oral": {
-        "questions": [
-          "Describe a time you travelled somewhere by MRT with your family. How did you feel during the journey?",
-          "Do you think it is important for Singapore to keep improving public transport? Why or why not?",
-          "If you could design a new MRT station, what special features would you include to make it fun and useful?"
-        ],
-        "phrases": [
-          "In my opinion, ...",
-          "I feel that ... because ...",
-          "For example, ...",
-          "This is important because ...",
-          "One thing I noticed is ..."
-        ]
-      },
-      "sources": [
-        {
-          "name": "Malay Mail: New Circle Line set to transform Singapore's MRT commute",
-          "url": "https://www.malaymail.com/news/singapore/2026/07/05/new-circle-line-set-to-transform-singapores-mrt-commute/226402"
-        },
-        {
-          "name": "LTA: Explore Three New Circle Line Stage 6 Stations on 4 July 2026",
-          "url": "https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/6/news-releases/explore-three-new-circle-line-stage-6-stations-on-4-july-2026.html"
-        },
-        {
-          "name": "SGTrains.com: Circle Line Stage 6 opening updates",
-          "url": "https://www.sgtrains.com/"
-        }
-      ]
-    },
-    {
-      "id": "hot-dry-thundery-july",
-      "emoji": "☀️",
-      "title": "Why Singapore Feels So Hot, Dry and Stormy This July",
-      "tag": "Nature & Environment",
-      "headline_kid": "Get ready for scorching afternoons, a few dry breezy days, and sudden early-morning thunderstorms — that's what our weather has in store this month!",
-      "summary": [
-        "Singapore's weather this July is being controlled by something called the Southwest Monsoon. Think of it like a giant fan in the sky that blows steady winds from the southeast or southwest across our island for weeks at a time. This kind of wind pattern usually brings warm, sometimes showery weather.",
-        "In the first half of July, short, sudden thundery showers popped up over parts of the island, especially in the late morning and afternoon — perfect timing to catch you without an umbrella after school! But the second week turned drier, with a few breezy days and less rain than usual.",
-        "Daily top temperatures have been sitting between 33 and 34 degrees Celsius on most days, sometimes climbing even higher when there are fewer clouds to block the sun. The hottest reading so far, 34.6 degrees Celsius, was recorded at Pulau Ubin. On some early mornings, sudden storms called 'Sumatra squalls' can also sweep in, bringing gusty winds and heavy rain before most people are even awake.",
-        "This mix of heat, dryness and sudden storms means it's smart to carry water, wear a hat, and keep a small umbrella in your school bag — you might need protection from the sun one moment and a surprise downpour the next!"
-      ],
-      "lenses": {
-        "me": "You should drink more water, wear a hat for outdoor PE lessons, and keep a foldable umbrella handy in case a Sumatra squall surprises you before school.",
-        "family": "Your family might use more air-conditioning or fans at home, and outdoor weekend plans like picnics could need a backup indoor option.",
-        "friends": "You and your classmates might notice recess or outdoor CCA feeling much hotter than usual, so remind each other to drink water.",
-        "nation": "Singapore's water reservoirs and greenery need to be managed carefully during drier spells so we don't run short of water.",
-        "world": "The Southwest Monsoon doesn't just affect Singapore — it shapes weather across the whole Southeast Asian region, including our neighbours Malaysia and Indonesia."
-      },
-      "compo_words": [
-        {
-          "word": "monsoon",
-          "type": "noun",
-          "meaning": "a season of strong winds that often brings a particular type of weather",
-          "example": "The Southwest Monsoon brought warm, breezy weather to Singapore this July."
-        },
-        {
-          "word": "humid",
-          "type": "adjective",
-          "meaning": "having a lot of moisture in the air, making it feel sticky",
-          "example": "The air felt humid and heavy just before the thunderstorm arrived."
-        },
-        {
-          "word": "squall",
-          "type": "noun",
-          "meaning": "a sudden, strong storm with heavy wind and rain",
-          "example": "A Sumatra squall woke the whole neighbourhood up with its gusty winds."
-        },
-        {
-          "word": "scorching",
-          "type": "adjective",
-          "meaning": "extremely hot",
-          "example": "It was a scorching afternoon, so we stayed indoors to cool down."
-        },
-        {
-          "word": "fluctuate",
-          "type": "verb",
-          "meaning": "to change or vary, going up and down",
-          "example": "Rainfall amounts can fluctuate a lot from one week to the next."
-        },
-        {
-          "word": "parched",
-          "type": "adjective",
-          "meaning": "very dry, especially from lack of rain",
-          "example": "The garden looked parched after several dry, windy days."
-        }
-      ],
-      "compo_phrases": [
-        {
-          "phrase": "come rain or shine",
-          "meaning": "whatever the weather is like",
-          "example": "Our school sports day will go on, come rain or shine."
-        },
-        {
-          "phrase": "out of the blue",
-          "meaning": "suddenly and unexpectedly",
-          "example": "The Sumatra squall arrived out of the blue while everyone was still asleep."
-        },
-        {
-          "phrase": "brace yourself for",
-          "meaning": "to prepare for something difficult or uncomfortable",
-          "example": "We should brace ourselves for a few very hot, dry afternoons this week."
-        }
-      ],
-      "oral": {
-        "questions": [
-          "How do you usually cope with very hot weather in Singapore? What do you do to stay cool?",
-          "Do you think Singapore's weather has been changing over the years? Why do you think so?",
-          "Describe a time you were caught in a sudden thunderstorm. What happened and how did you feel?"
-        ],
-        "phrases": [
-          "From my experience, ...",
-          "I usually ... when the weather is ...",
-          "It reminds me of a time when ...",
-          "I believe this is because ...",
-          "To stay safe, I would ..."
-        ]
-      },
-      "sources": [
-        {
-          "name": "Meteorological Service Singapore: Fortnightly Weather Outlook",
-          "url": "https://www.weather.gov.sg/weather-fortnightly-outlook/"
-        },
-        {
-          "name": "EaseWeather: Weather in Singapore in July 2026",
-          "url": "https://www.easeweather.com/asia/singapore/singapore/july"
-        }
-      ]
-    },
-    {
-      "id": "gulf-tensions-oil-prices",
-      "emoji": "🛢️",
-      "title": "Trouble Near a Busy Sea Path Could Nudge Up Prices Here",
-      "tag": "Singapore & The World",
-      "headline_kid": "Far away in the Middle East, a serious disagreement near an important sea passage is making oil prices wobble — and that could touch our wallets in Singapore too.",
-      "summary": [
-        "This week, there has been serious fighting between the United States and Iran, two countries in a region called the Middle East. Some of this fighting has happened near a narrow sea passage called the Strait of Hormuz, which is a bit like a busy expressway lane that huge oil ships must squeeze through to deliver oil to countries around the world.",
-        "Iran has been blocking parts of this sea passage as a way to pressure other countries, and this has been going on for months. Because of the fighting, oil prices have been wobbling up and down, and stock markets — where people buy and sell shares of companies — have also been jumpy. Even India has told its ship workers to avoid sailing through the Strait of Hormuz for safety.",
-        "A country called Pakistan tried to help both sides sit down and talk things through peacefully, though the fighting has continued for now. Grown-ups around the world, including here in Singapore, are watching closely because oil affects so many things we use every day, from petrol for cars to electricity in our homes.",
-        "Singapore doesn't have its own oil wells, so we buy oil from other countries and are also one of the world's busiest ports for oil ships. If oil becomes more expensive or ships have to take longer routes to stay safe, things like petrol, bus fares, and even the cost of flying overseas could slowly go up. It's a good reminder of how something happening far away can still reach our everyday lives."
-      ],
-      "lenses": {
-        "me": "You might hear your parents mention 'oil prices' or 'petrol prices' at the dinner table this week — now you'll understand a bit more about why.",
-        "family": "Your family's petrol bill, cooking gas, or even flight tickets for a holiday could cost a little more if this continues.",
-        "friends": "This is a great topic to bring up during Social Studies or current affairs discussions with your classmates.",
-        "nation": "Singapore is a major port and trading hub, so changes in oil prices and shipping routes can affect our economy quite directly.",
-        "world": "It shows how connected our world is — a conflict in one region can affect oil prices, shipping, and shopping bills on the other side of the globe."
-      },
-      "compo_words": [
-        {
-          "word": "conflict",
-          "type": "noun",
-          "meaning": "a serious disagreement or fight, often between countries",
-          "example": "The conflict near the Strait of Hormuz worried many world leaders."
-        },
-        {
-          "word": "essential",
-          "type": "adjective",
-          "meaning": "extremely important and necessary",
-          "example": "Oil is an essential resource used to power cars, factories and homes."
-        },
-        {
-          "word": "global",
-          "type": "adjective",
-          "meaning": "relating to the whole world",
-          "example": "The tension caused global oil prices to rise sharply."
-        },
-        {
-          "word": "impact",
-          "type": "verb",
-          "meaning": "to have a noticeable effect on something",
-          "example": "Fighting overseas can impact the price of petrol here in Singapore."
-        },
-        {
-          "word": "mediate",
-          "type": "verb",
-          "meaning": "to help two sides settle an argument peacefully",
-          "example": "Pakistan tried to mediate between the two countries so they could talk instead of fight."
-        },
-        {
-          "word": "tension",
-          "type": "noun",
-          "meaning": "a feeling of unease caused by a disagreement",
-          "example": "The tension in the region made shipping companies more cautious."
-        }
-      ],
-      "compo_phrases": [
-        {
-          "phrase": "keep an eye on",
-          "meaning": "to watch something carefully",
-          "example": "Grown-ups are keeping an eye on oil prices this week."
-        },
-        {
-          "phrase": "ripple effect",
-          "meaning": "a situation where one event causes a series of other effects",
-          "example": "The conflict overseas created a ripple effect on prices all around the world."
-        },
-        {
-          "phrase": "in the same boat",
-          "meaning": "facing the same difficult situation as others",
-          "example": "Many countries that buy oil are in the same boat, worrying about rising costs."
-        }
-      ],
-      "oral": {
-        "questions": [
-          "Why do you think events happening in other countries can affect prices in Singapore?",
-          "How would you feel if things like bus fares or food became more expensive? What would you do to help your family save money?",
-          "Do you think it is useful for children to learn about world news? Why or why not?"
-        ],
-        "phrases": [
-          "I think this happens because ...",
-          "It affects us by ...",
-          "One way to save money would be ...",
-          "This makes me feel ... because ...",
-          "I learnt that ... is connected to ..."
-        ]
-      },
-      "sources": [
-        {
-          "name": "Yahoo News Singapore: Latest news and current events updates",
-          "url": "https://sg.news.yahoo.com/"
-        }
-      ]
-    },
-    {
-      "id": "pioneer-generation-medisave-boost",
-      "emoji": "💊",
-      "title": "Grandparents Get a MediSave Boost This July",
+      "id": "singaporeans-spending-jb-rts",
+      "emoji": "🛒",
+      "title": "Soon You'll Shop in Johor Bahru Much Faster — And That Changes Everything",
       "tag": "Money & Daily Life",
-      "headline_kid": "Older Singaporeans from the 'Pioneer Generation' — the grandparents and great-grandparents who helped build our nation — are getting up to $1,200 extra for medical bills this month!",
+      "headline_kid": "A new fast train link will make it so easy for Singaporeans to go shopping in Malaysia that families might spend S$1 billion extra there every year.",
       "summary": [
-        "This July, seniors known as the Pioneer Generation are receiving MediSave top-ups of up to S$1,200. MediSave works a bit like a special piggy bank that every Singaporean has, but it can only be used to pay for things like doctor visits, medicine, and hospital stays — not toys or snacks!",
-        "The Pioneer Generation refers to older Singaporeans who lived through the country's early, tougher years and helped build modern Singapore. Because they are older now, they may visit the doctor more often, so this extra top-up helps make sure medical bills don't become a big worry for them or their families.",
-        "This kind of support is given out regularly by the government as a way of saying thank you to seniors for their hard work in the past. It means grandparents can go for check-ups or buy medicine with less stress about money.",
-        "For families, this is good news too — when grandparents have enough saved up for healthcare, there is less pressure on the whole family to help pay medical bills, leaving more room in the family budget for other things."
+        "When the RTS Link (Rapid Transit System) opens soon, getting from Singapore to Johor Bahru will take only 5 minutes by train instead of 30 minutes by car. This makes it super quick and cheap to cross the border. A study shows that Singaporeans will probably spend about S$1 billion more money per year in Johor Bahru — that's like 1 million Singaporeans each spending S$1,000 extra there!",
+        "The biggest winners will be groceries, pharmacies (medicine shops), and restaurants. Many things cost less in Johor Bahru than in Singapore, so families can save money on shopping. For example, a bottle of shampoo or a meal at a restaurant might be 30% cheaper across the border.",
+        "This is good news and tricky news at the same time. Singapore's shops and restaurants worry they might lose customers to Johor Bahru. But it's also great for Singaporeans' wallets, because choice and cheaper prices usually make everyone's money stretch further. People in Johor Bahru will also benefit because more shoppers from Singapore means their businesses get busier."
       ],
       "lenses": {
-        "me": "If your grandparents are part of the Pioneer Generation, you might notice them feeling a little more relaxed about upcoming doctor visits.",
-        "family": "Your family may feel less worried about helping pay for grandparents' medical costs, since MediSave can now cover more.",
-        "friends": "You could ask your friends whether their grandparents also received this top-up, and compare what you both know about MediSave.",
-        "nation": "This shows how Singapore takes care of the generation who helped build the country when it was still young and developing.",
-        "world": "Many countries are trying to find better ways to support their ageing populations, and Singapore's MediSave system is often studied as one example."
+        "me": "You might take day trips to Johor Bahru with your family for shopping or meals, and your parents will save money on groceries and treats.",
+        "family": "Your family's shopping budget could stretch further — groceries, medicine, and dining out will be more affordable, and weekend trips to JB could become as common as going to the mall.",
+        "friends": "Your classmates' families might plan regular JB shopping trips during school holidays, and some of your friends might even study or work there one day because the link makes it so convenient.",
+        "nation": "Singapore will see some shops lose business to JB, which is a challenge, but the country also benefits from closer ties with Malaysia and workers having more choice about where to live and work.",
+        "world": "This is how modern cities work together — removing barriers between countries makes life easier for everyone, though some local businesses need to adapt and compete better."
       },
       "compo_words": [
         {
-          "word": "elderly",
-          "type": "adjective",
-          "meaning": "relating to older people",
-          "example": "The elderly residents in the neighbourhood were happy about the MediSave top-up."
-        },
-        {
-          "word": "generous",
-          "type": "adjective",
-          "meaning": "giving more than what is expected",
-          "example": "The government gave a generous top-up to help seniors with medical costs."
-        },
-        {
-          "word": "healthcare",
+          "word": "convenience",
           "type": "noun",
-          "meaning": "the treatment and care given to keep people healthy",
-          "example": "Good healthcare helps seniors stay strong and active."
+          "meaning": "something that is easy and doesn't take much effort or time",
+          "example": "The new link provides convenience for families who want to shop across the border."
         },
         {
-          "word": "contribute",
+          "word": "benefit",
           "type": "verb",
-          "meaning": "to give something, such as money or effort, towards a shared goal",
-          "example": "The Pioneer Generation contributed greatly to building modern Singapore."
+          "meaning": "to gain something good or helpful from something",
+          "example": "Both Singapore and Johor Bahru will benefit from the faster transport link."
         },
         {
-          "word": "fund",
-          "type": "verb",
-          "meaning": "to provide money for a particular purpose",
-          "example": "The top-up will help fund medical check-ups for many seniors."
-        },
-        {
-          "word": "grateful",
+          "word": "affordable",
           "type": "adjective",
-          "meaning": "feeling thankful",
-          "example": "Many seniors felt grateful for the extra support in their MediSave accounts."
+          "meaning": "not too expensive; something you can pay for without spending too much money",
+          "example": "Shopping in Johor Bahru is more affordable because prices are lower there."
         }
       ],
       "compo_phrases": [
         {
-          "phrase": "lend a helping hand",
-          "meaning": "to help someone",
-          "example": "The government lent a helping hand to seniors by topping up their MediSave."
+          "phrase": "As a result",
+          "meaning": "because of something that happened before; the effect or outcome",
+          "example": "As a result of the new link, families can save money on everyday shopping."
         },
         {
-          "phrase": "put money aside",
-          "meaning": "to save money for later use",
-          "example": "MediSave helps seniors put money aside specially for medical needs."
-        },
-        {
-          "phrase": "look after",
-          "meaning": "to take care of someone",
-          "example": "Singapore tries to look after the Pioneer Generation who built the nation."
+          "phrase": "on the other hand",
+          "meaning": "looking at a different side of the situation; the opposite view",
+          "example": "The link helps Singaporean shoppers, but on the other hand, local shops might lose customers."
         }
       ],
       "oral": {
         "questions": [
-          "How do you show care and respect towards your grandparents or elderly neighbours?",
-          "Why do you think it is important for a country to help take care of its senior citizens?",
-          "If your family received extra money to help with healthcare, how would you suggest using it wisely?"
+          "If the RTS Link makes shopping in Johor Bahru so much cheaper, do you think your parents would shop there more often? Why or why not?",
+          "Some Singapore shop owners worry they will lose customers to Johor Bahru. What could they do to stay competitive and keep customers?",
+          "What do you think are the good things and bad things about making it so easy for people to cross borders between countries?"
         ],
         "phrases": [
-          "I show respect by ...",
-          "I think this is important because ...",
-          "One way to use it wisely would be ...",
-          "This reminds me of my own grandparents, who ...",
-          "In my family, we ..."
+          "I think my family would... because...",
+          "The advantage of this is... but the disadvantage is...",
+          "In my opinion, shops could attract customers by...",
+          "This change is important because...",
+          "On one hand... on the other hand..."
         ]
       },
       "sources": [
         {
-          "name": "CNA News Headlines: Pioneer Generation seniors to get MediSave top-ups of up to S$1,200 in mid-July",
-          "url": "https://www.webjosh.com/news/singapore/all-categories/english/cna/"
+          "name": "Channel NewsAsia - Singapore residents set to spend S$1 billion more a year in JB after RTS Link opens",
+          "url": "https://www.channelnewsasia.com/singapore/singapore-spend-more-jb-rts-link-opens-6257241"
         }
       ]
     },
     {
-      "id": "national-coffee-championship",
-      "emoji": "☕",
-      "title": "67 Coffee Champions Battle It Out at Marina Bay",
-      "tag": "People & Culture",
-      "headline_kid": "Today is the last day for 67 talented baristas competing to become Singapore's next coffee champion!",
+      "id": "thailand-exam-bribery-scandal",
+      "emoji": "📝",
+      "title": "Teachers in Thailand Caught Taking Bribes to Help Students Cheat on Big Exams",
+      "tag": "School & Health",
+      "headline_kid": "Thousands of officials in Thailand are in serious trouble because they took money to change test answers and let students pass important exams they didn't actually pass fairly.",
       "summary": [
-        "The Singapore National Coffee Championship is happening from 15 to 17 July 2026 at the Sands Expo & Convention Centre — which means today is the final and most exciting day! It's organised by the Singapore Coffee Association, a group that supports and celebrates coffee makers, called baristas, across the country.",
-        "This year, 67 local baristas are showing off their skills, competing across four different categories. Some categories may test how well they can make classic drinks perfectly, while others might reward creativity and flair, like a chef inventing a brand-new dish.",
-        "Several previous champions have returned this year to defend their titles, which makes the competition even more exciting. Imagine training for months, practising the same recipe over and over, just to make sure every cup is perfect on competition day — that's real dedication!",
-        "This event shows how much passion and skill goes into something we often take for granted, like a cup of coffee. It's a fun example of Singaporeans working hard and being creative in a craft they love."
+        "In Thailand, about 6,000 government officials are facing suspension (temporary job loss) because of a massive cheating scandal. Investigators discovered that these officials accepted bribes — that's money paid to someone to break rules — to electronically change students' exam results. Some officials received as much as 800,000 Thai baht (about S$30,000 SGD) for this dishonest work.",
+        "The scandal began in June when investigators started looking into why so many students were mysteriously passing mandatory exams for government jobs. These are very important tests that students must pass to become government workers. Instead of studying hard like they should, some students paid officials to secretly change their test scores from 'fail' to 'pass.'",
+        "This is a huge problem because it means unqualified people got jobs helping the public. A bus driver who didn't study traffic safety, or a nurse who didn't learn about medicines, could harm people. Thailand's government is angry and embarrassed, and the 6,000 officials will likely face serious punishment including losing their jobs. This reminds us why exams matter — they make sure people actually know their job before they start working."
       ],
       "lenses": {
-        "me": "Even if you don't drink coffee, you can learn that any skill — from baking to drawing to sports — takes practice and dedication to master.",
-        "family": "This could be a fun outing idea for your family this weekend, especially if your parents enjoy coffee or trying new cafes.",
-        "friends": "You and your friends could talk about your own hobbies and what it would take to become a 'champion' at something you love.",
-        "nation": "Competitions like this showcase Singapore's growing food and beverage talent to visitors and the rest of the world.",
-        "world": "Coffee culture and barista competitions happen in many countries, connecting Singapore to a much bigger global coffee-loving community."
+        "me": "You're preparing for PSLE, which tests whether you're really ready for secondary school. If cheating were allowed, lazy students could get into better schools than hardworking friends, which would be unfair.",
+        "family": "Your parents trust that exam results show your true level. If exams were fake, your certificate wouldn't mean anything, and employers wouldn't know if someone could really do the job.",
+        "friends": "Your classmates study hard for exams because they know the results matter and are honest. This scandal shows what happens when people try to cheat the system — everyone gets caught and loses trust.",
+        "nation": "Singapore's education system is known worldwide as fair and excellent because we don't allow cheating. Thailand's scandal shows why integrity in testing is so important for a country's reputation.",
+        "world": "Many countries use exams to check if people are qualified for important jobs like doctors, pilots, and teachers. Cheating undermines public safety and trust in those professionals everywhere."
       },
       "compo_words": [
         {
-          "word": "dedication",
+          "word": "bribery",
           "type": "noun",
-          "meaning": "strong commitment to a task or purpose",
-          "example": "Winning the competition required months of dedication and practice."
+          "meaning": "illegally giving money or gifts to someone to make them break rules or act dishonestly",
+          "example": "The bribery scandal showed that some officials were willing to break the law for money."
         },
         {
-          "word": "skilled",
-          "type": "adjective",
-          "meaning": "having the ability to do something well",
-          "example": "The skilled baristas impressed the judges with their smooth technique."
-        },
-        {
-          "word": "compete",
+          "word": "suspend",
           "type": "verb",
-          "meaning": "to try to win against others in a contest",
-          "example": "Sixty-seven baristas competed for the title of national champion."
+          "meaning": "to temporarily stop someone from working or attending, usually as punishment",
+          "example": "The government decided to suspend the officials who accepted bribes."
         },
         {
-          "word": "passionate",
+          "word": "mandatory",
           "type": "adjective",
-          "meaning": "having strong feelings of enthusiasm for something",
-          "example": "She is passionate about coffee and practises her craft every day."
+          "meaning": "required; something you must do, not optional",
+          "example": "All students must pass the mandatory exam before they can become teachers."
         },
         {
-          "word": "craft",
+          "word": "integrity",
           "type": "noun",
-          "meaning": "a skill, especially in making things by hand",
-          "example": "Making great coffee is considered a craft that takes years to master."
-        },
-        {
-          "word": "showcase",
-          "type": "verb",
-          "meaning": "to display something in the best possible way",
-          "example": "The event showcased the talents of Singapore's best baristas."
+          "meaning": "honesty and being truthful; doing the right thing even when no one is watching",
+          "example": "A student with integrity will not cheat on exams, even if they could get away with it."
         }
       ],
       "compo_phrases": [
         {
-          "phrase": "hone one's skills",
-          "meaning": "to improve a skill through practice",
-          "example": "The baristas honed their skills for months before the big competition."
+          "phrase": "as a result of",
+          "meaning": "because something happened; the consequence",
+          "example": "As a result of the scandal, thousands of officials lost their jobs."
         },
         {
-          "phrase": "rise to the occasion",
-          "meaning": "to perform very well when it matters most",
-          "example": "Despite the pressure, the young barista rose to the occasion and impressed the judges."
-        },
-        {
-          "phrase": "brew up a storm",
-          "meaning": "to do something (here, making coffee) with great energy and skill",
-          "example": "The competitors brewed up a storm as they raced against the clock."
+          "phrase": "bring shame to",
+          "meaning": "to damage someone's reputation or honor; to make someone look bad",
+          "example": "The bribery scandal brought shame to Thailand's government."
         }
       ],
       "oral": {
         "questions": [
-          "Describe a hobby or skill you have worked hard to improve. What did you learn from the experience?",
-          "Do you think competitions help people improve their skills? Why or why not?",
-          "If you could organise a competition for something you love doing, what would it be and why?"
+          "Why do you think it's important that exam results are honest and fair? What would happen if cheating were allowed in your school?",
+          "If you knew a classmate had paid someone to change their exam marks, what do you think you should do about it?",
+          "The officials who took bribes broke the law. Do you think they should lose their jobs forever, or should they get a second chance? Explain your thinking."
         ],
         "phrases": [
-          "I have always enjoyed ...",
-          "I improved by practising ...",
-          "I believe competitions help because ...",
-          "If I organised one, I would ...",
-          "This is meaningful to me because ..."
+          "I think exams are important because...",
+          "If cheating were allowed, then...",
+          "The punishment should be severe because...",
+          "In my opinion, honesty is important in school because...",
+          "This teaches us that... is wrong and unfair."
         ]
       },
       "sources": [
         {
-          "name": "The Honeycombers: What's happening in Singapore this week",
-          "url": "https://thehoneycombers.com/singapore/whats-happening-in-singapore-lifestyle-news/"
+          "name": "Channel NewsAsia - Thailand mulls suspending nearly 6,000 officials over exam scandal",
+          "url": "https://www.channelnewsasia.com/asia/thailand-suspend-6000-officials-exam-scandal-6258221"
+        }
+      ]
+    },
+    {
+      "id": "hong-kong-dim-sum-restaurant-football",
+      "emoji": "⚽",
+      "title": "An Old Hong Kong Restaurant Found a Clever Way to Win More Customers: Sports and Dumplings",
+      "tag": "People & Culture",
+      "headline_kid": "A famous dim sum restaurant in Hong Kong boosted its business by 20% by showing football matches and serving dumplings to fans at the same time.",
+      "summary": [
+        "Lin Heung Lau is one of Hong Kong's oldest dim sum restaurants — it's been around for ages and serves those delicious little steamed dumplings and other treats from carts. But like many traditional restaurants in Hong Kong, business has been tough in recent years. So the restaurant owners had a smart idea: show football World Cup matches on big screens while customers eat dim sum.",
+        "It worked! Business jumped up by 20%, which means 20% more customers came to the restaurant. People loved the combination of cheering for their favourite teams while munching on hot dumplings and drinking tea. Football fans who might never have tried dim sum now discovered how tasty it is. And regular dim sum lovers got to enjoy their favourite food while watching exciting matches.",
+        "This is a great example of how old businesses can stay alive by being creative and mixing tradition with what people enjoy today. Lin Heung Lau didn't stop serving dim sum the way it's always been done — they just added something new that brings people together. Hong Kong's food culture and football culture came together, and everyone won. Many restaurants facing challenges could learn from this clever idea."
+      ],
+      "lenses": {
+        "me": "Next time you go to a restaurant, notice how mixing good food with fun activities (like sports on screen, or games to play) makes the experience more enjoyable and memorable.",
+        "family": "Your family might want to visit a restaurant showing a big match during dinner — it turns an ordinary meal into a fun family event where you can bond over food and sports.",
+        "friends": "Getting friends together to watch football while eating tasty food is way more fun than just meeting at a regular café. This combination works because it combines two things you enjoy.",
+        "nation": "Singapore also has many traditional hawker stalls and restaurants. This story shows how adding modern elements (like live sports screens) can help local food businesses attract younger customers while keeping tradition alive.",
+        "world": "Restaurants worldwide are learning that business isn't just about food anymore — it's about creating an experience and a gathering place. This is how old traditions survive and thrive in modern times."
+      },
+      "compo_words": [
+        {
+          "word": "boost",
+          "type": "verb",
+          "meaning": "to make something increase or become better; to help something grow",
+          "example": "The restaurant boosted its business by showing exciting football matches."
+        },
+        {
+          "word": "traditional",
+          "type": "adjective",
+          "meaning": "something that has been done the same way for a very long time; old and respected",
+          "example": "Dim sum is a traditional Hong Kong food that many families have enjoyed for generations."
+        },
+        {
+          "word": "creative",
+          "type": "adjective",
+          "meaning": "able to think of new ideas and do things in interesting ways",
+          "example": "The restaurant owner had a creative solution to attract more customers."
+        }
+      ],
+      "compo_phrases": [
+        {
+          "phrase": "bring together",
+          "meaning": "to make people or things come together; to unite",
+          "example": "Good food and sports brought together all kinds of customers at the restaurant."
+        },
+        {
+          "phrase": "stay competitive",
+          "meaning": "to keep being good or popular compared to other businesses; to not fall behind",
+          "example": "Old restaurants must stay competitive by trying new ideas while keeping their traditions."
+        }
+      ],
+      "oral": {
+        "questions": [
+          "If your family's favourite food court or restaurant added a new activity (like showing movies or hosting game tournaments), would you want to go there more often? Why?",
+          "The restaurant mixed something traditional (dim sum) with something modern (football matches). Can you think of other traditional things in Singapore that could be mixed with modern activities to attract younger people?",
+          "Do you think showing sports on screens in restaurants is a good business idea, or do you prefer restaurants where you just focus on eating? Explain your answer."
+        ],
+        "phrases": [
+          "I think this is clever because...",
+          "If I owned a restaurant, I would add... to attract more customers.",
+          "Mixing tradition with modern things is good because...",
+          "This restaurant succeeded because it...",
+          "In my opinion, the best restaurants are those that..."
+        ]
+      },
+      "sources": [
+        {
+          "name": "Channel NewsAsia - Football with a side of dim sum: Hong Kong teahouse scores big with World Cup fans",
+          "url": "https://www.channelnewsasia.com/asia/hong-kong-teahouse-football-dim-sum-6257861"
+        }
+      ]
+    },
+    {
+      "id": "ai-cybersecurity-risk-asia",
+      "emoji": "🤖",
+      "title": "Meet AI Workers: Super Smart Helpers That Are Starting to Cause Security Problems",
+      "tag": "Science & Tech",
+      "headline_kid": "Asia is using AI agents (robot helpers) to write emails and code, but experts warn these smart machines could accidentally create big security holes if we're not careful.",
+      "summary": [
+        "Imagine a robot employee who can draft emails, write computer code, update documents, and complete tasks all by itself. These are called AI agents, and companies across Asia are using them to work faster and get more done. Unlike regular software that follows exact instructions, AI agents can think and make choices on their own, which makes them powerful and useful. A bank might use an AI agent to sort thousands of customer emails, or a tech company might use one to write code for new apps.",
+        "But here's the problem: the same power that makes AI agents useful also creates danger. If a hacker tricks an AI agent into doing bad things, the agent might give away secret passwords, leak customer information, or put bugs into computer code that millions of people use. Because AI agents are so independent and smart, it's hard to predict exactly what they'll do in unusual situations. Security experts are worried because AI agents are spreading across Asia very fast, but companies aren't thinking carefully enough about protection.",
+        "This is a bit like giving a very smart and helpful robot the keys to your house — great for security and convenience, but dangerous if someone hacks the robot. Asia's companies need to develop better ways to watch and control AI agents, and make sure they only do what they're supposed to do. This is a challenge that engineers and companies are working on right now, to make AI safe and useful at the same time."
+      ],
+      "lenses": {
+        "me": "You're growing up in a world with AI. Learning about how AI can be both helpful and risky will prepare you to use it safely and smartly in your future job.",
+        "family": "Your family's bank account, medical records, and personal information could be protected (or put at risk) by AI systems. It's good to know that experts are working to keep this information safe.",
+        "friends": "Your generation will likely work alongside AI agents in many jobs. Understanding their strengths and weaknesses now means you'll be better prepared than adults who grew up without AI.",
+        "nation": "Singapore is a tech hub in Asia, so companies here are adopting AI agents quickly. Singapore's government and tech leaders are also working on guidelines to keep AI safe — this is part of staying competitive while protecting citizens.",
+        "world": "Every country with advanced technology faces this challenge. The countries that figure out how to use AI safely and responsibly will have huge advantages in business and innovation."
+      },
+      "compo_words": [
+        {
+          "word": "vulnerability",
+          "type": "noun",
+          "meaning": "a weak spot or weakness that can be attacked or damaged",
+          "example": "The cybersecurity expert found vulnerabilities in the AI system that hackers could exploit."
+        },
+        {
+          "word": "autonomous",
+          "type": "adjective",
+          "meaning": "able to work independently and make decisions without being told what to do",
+          "example": "An autonomous AI agent can work on tasks without constant human supervision."
+        },
+        {
+          "word": "exploit",
+          "type": "verb",
+          "meaning": "to unfairly use something or someone for advantage; also to take advantage of a weakness",
+          "example": "Hackers might try to exploit weaknesses in the AI system to steal data."
+        }
+      ],
+      "compo_phrases": [
+        {
+          "phrase": "in the same way that",
+          "meaning": "similar to; just like",
+          "example": "In the same way that a smart employee could be tricked, an AI agent could be manipulated by hackers."
+        },
+        {
+          "phrase": "on the flip side",
+          "meaning": "looking at the opposite or different side; conversely",
+          "example": "On the flip side, the autonomy that makes AI agents useful also creates security risks."
+        }
+      ],
+      "oral": {
+        "questions": [
+          "Do you think companies should use AI agents if they might have security problems, or should they wait until the systems are completely safe? Why?",
+          "Imagine you're the boss of a company. What rules would you make for your AI agents to keep customer information protected?",
+          "Many new technologies (like social media, smartphones, the internet itself) started out risky but became safer over time. Do you think AI agents will follow the same pattern?"
+        ],
+        "phrases": [
+          "I think using AI agents is... because...",
+          "The benefit of AI agents is..., but the risk is...",
+          "To keep AI safe, companies should...",
+          "In my opinion, the government should require...",
+          "This shows that technology is both... and..."
+        ]
+      },
+      "sources": [
+        {
+          "name": "Channel NewsAsia - Why Asia's new AI workers are emerging as a cybersecurity challenge",
+          "url": "https://www.channelnewsasia.com/asia/asia-ai-agents-adoption-advantages-security-risks-6255231"
+        }
+      ]
+    },
+    {
+      "id": "actor-richard-low-health",
+      "emoji": "💚",
+      "title": "Actor Richard Low Shares His Health Challenge — And Shows Why Lifestyle Matters",
+      "tag": "School & Health",
+      "headline_kid": "Actor Richard Low recently spent six days in hospital and revealed he has an incurable bowel condition, but he's learning to manage it through healthy lifestyle choices.",
+      "summary": [
+        "Richard Low is a popular actor in Singapore who recently had to go to the hospital for six days. He shared with the public that he has an incurable colon condition — meaning his bowel (the digestive system) has a permanent problem that doctors cannot completely cure. The good news is that even though the condition cannot be cured, it can be managed, which means he can still live well and enjoy his life. Many people have incurable health conditions that they control through lifestyle changes.",
+        "Richard discovered that certain foods and habits make his condition worse. He's now reducing fried food and alcohol — which is smart because greasy and fried foods are hard on the digestive system, and alcohol irritates it. By making these changes, he can keep his symptoms under control and stay out of the hospital. He's choosing healthier foods, which gives his body the nutrition it needs to stay strong.",
+        "Richard's openness about his health is helpful because it teaches everyone (not just him) that health challenges don't mean your life is over. Instead of feeling defeated, he's taking action to manage his condition. This is an inspiring example for young people: if you ever face a health problem, remember that understanding it and making good choices about food and exercise can help you feel better. It's also a reminder that taking care of your body now — eating less fried food, exercising, drinking water — helps prevent problems later."
+      ],
+      "lenses": {
+        "me": "Right now at age 10, the health choices you make (eating nutritious food, moving your body, getting sleep) are building habits that protect your future. Richard's story shows why these choices matter.",
+        "family": "Your parents probably remind you to eat vegetables and not spend all day on screens. Richard's experience proves they're right — prevention and healthy habits are easier than managing serious health problems later.",
+        "friends": "Some of your classmates might have health conditions, and Richard's story shows that having a health challenge doesn't make you weak or different — it just means you need to care for yourself mindfully.",
+        "nation": "Singapore focuses on preventive health care, teaching people to exercise and eat well. Richard's story supports this message and reminds everyone why healthy living is important for the whole nation.",
+        "world": "Many people worldwide face incurable but manageable conditions. The message is universal: understanding your health and making positive choices lets you live a full, happy life despite challenges."
+      },
+      "compo_words": [
+        {
+          "word": "incurable",
+          "type": "adjective",
+          "meaning": "a condition or disease that cannot be completely healed or cured by medicine",
+          "example": "Though Richard's colon condition is incurable, he can manage it with lifestyle changes."
+        },
+        {
+          "word": "manage",
+          "type": "verb",
+          "meaning": "to control something and keep it in good condition; to deal with something successfully",
+          "example": "Patients can manage many health conditions by exercising and eating healthy food."
+        },
+        {
+          "word": "lifestyle",
+          "type": "noun",
+          "meaning": "the way you live; the daily choices you make about food, exercise, sleep, and activities",
+          "example": "A healthy lifestyle means eating well, exercising, and getting enough sleep."
+        }
+      ],
+      "compo_phrases": [
+        {
+          "phrase": "take action",
+          "meaning": "to do something to fix or improve a situation; to start doing something important",
+          "example": "Richard took action to improve his health by reducing fried food and alcohol."
+        },
+        {
+          "phrase": "set an example",
+          "meaning": "to show others how to behave through your own actions",
+          "example": "By being honest about his health, Richard sets a good example for others facing health challenges."
+        }
+      ],
+      "oral": {
+        "questions": [
+          "Richard changed his diet to manage his health condition. What are some healthy changes you could make in your own lifestyle right now, without waiting until you have a health problem?",
+          "Many people feel embarrassed about health problems and hide them. Why do you think Richard decided to tell the public about his condition? Was that a good idea?",
+          "Richard's condition is incurable but manageable. Does that mean his life is bad, or can he still be happy and do the things he enjoys? Explain your thinking."
+        ],
+        "phrases": [
+          "I think Richard's decision to share is good because...",
+          "Healthy choices I could make include...",
+          "An incurable condition is... because...",
+          "Prevention is important because...",
+          "This story teaches me that..."
+        ]
+      },
+      "sources": [
+        {
+          "name": "Channel NewsAsia - Actor Richard Low reveals incurable colon condition behind recent six-day hospitalisation",
+          "url": "https://www.channelnewsasia.com/entertainment/richard-low-hospitalised-colon-condition-6259891"
         }
       ]
     }
