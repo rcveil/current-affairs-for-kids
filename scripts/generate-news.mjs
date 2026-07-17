@@ -18,7 +18,7 @@ const DATA_DIR = path.join(here, "..", "data");
 const OUTPUT_PATH = path.join(DATA_DIR, "news.json");
 const DATED_PATH = path.join(DATA_DIR, `news-${new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" })}.json`);
 const INDEX_PATH = path.join(DATA_DIR, "index.json");
-const MODEL = "claude-haiku-4-5-20251001";
+const MODEL = "claude-sonnet-5";
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" }); // YYYY-MM-DD
 
@@ -152,7 +152,7 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
 
   const stream = client.messages.stream({
     model: MODEL,
-    max_tokens: 10000,
+    max_tokens: 12000,
     system: SYSTEM_PROMPT,
     messages: [{ role: "user", content: USER_PROMPT }],
   });
@@ -182,9 +182,9 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
   fs.writeFileSync(INDEX_PATH, JSON.stringify(index.slice(0, 30), null, 2) + "\n");
   console.log(`index.json updated — ${index.length} date(s) available.`);
 
-  // Haiku 4.5 pricing: $1/M input, $5/M output
+  // Sonnet 5 pricing: $2/M input, $10/M output (intro through 2026-08-31, then $3/$15)
   const { input_tokens: totalIn, output_tokens: totalOut } = response.usage;
-  const costUSD = (totalIn / 1e6 * 1) + (totalOut / 1e6 * 5);
+  const costUSD = (totalIn / 1e6 * 2) + (totalOut / 1e6 * 10);
   console.log(`Usage: in=${totalIn} out=${totalOut} — est. cost $${costUSD.toFixed(4)}`);
 }
 
