@@ -87,7 +87,7 @@ h1, h2, h3, .brand-title { font-family: "Fredoka", sans-serif; }
 .cal-nav {
   background: var(--card);
   border-radius: var(--radius);
-  padding: 14px 16px;
+  padding: 10px 14px 12px;
   margin-bottom: 20px;
   box-shadow: var(--shadow);
 }
@@ -132,24 +132,24 @@ h1, h2, h3, .brand-title { font-family: "Fredoka", sans-serif; }
 .cal-weekdays, .cal-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 3px;
+  gap: 2px;
 }
 .cal-weekdays > div {
   text-align: center;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: var(--ink-soft);
-  padding: 3px 0 6px;
+  padding: 2px 0 4px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 .cal-day {
-  aspect-ratio: 1;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  font-size: 0.88rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
   color: #d4cec7;
