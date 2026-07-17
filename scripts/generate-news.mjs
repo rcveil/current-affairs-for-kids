@@ -95,6 +95,7 @@ async function main() {
 
   let messages = [{ role: "user", content: USER_PROMPT }];
   let response;
+  let totalIn = 0, totalOut = 0;
 
   // Web search runs in a server-side loop; on pause_turn, append the assistant
   // turn and re-send so the server resumes where it left off.
@@ -107,6 +108,8 @@ async function main() {
       messages,
     });
     response = await stream.finalMessage();
+    totalIn += response.usage.input_tokens;
+    totalOut += response.usage.output_tokens;
 
     if (response.stop_reason !== "pause_turn") break;
     messages = [...messages, { role: "assistant", content: response.content }];
@@ -139,7 +142,8 @@ async function main() {
   if (!index.includes(today)) index.unshift(today);
   fs.writeFileSync(INDEX_PATH, JSON.stringify(index.slice(0, 30), null, 2) + "\n");
   console.log(`index.json updated — ${index.length} date(s) available.`);
-  console.log(`Usage: in=${response.usage.input_tokens} out=${response.usage.output_tokens}`);
+  const costUSD = (totalIn / 1e6 * 2) + (totalOut / 1e6 * 10);
+  console.log(`Usage: in=${totalIn} out=${totalOut} — est. cost $${costUSD.toFixed(4)}`);
 }
 
 function extractJson(text) {
