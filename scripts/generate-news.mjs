@@ -4,8 +4,8 @@
  * Composition & Oral vocabulary.
  *
  * Runs daily via .github/workflows/update-news.yml. Requires ANTHROPIC_API_KEY.
- * Claude searches the web itself (server-side web_search tool), so no RSS
- * parsing is needed here.
+ * News is sourced from public RSS feeds (CNA, Mothership) — no web_search tool,
+ * which avoids expensive output-token billing for search results.
  */
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -18,13 +18,19 @@ const DATA_DIR = path.join(here, "..", "data");
 const OUTPUT_PATH = path.join(DATA_DIR, "news.json");
 const DATED_PATH = path.join(DATA_DIR, `news-${new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" })}.json`);
 const INDEX_PATH = path.join(DATA_DIR, "index.json");
-const MODEL = "claude-sonnet-5";
+const MODEL = "claude-haiku-4-5-20251001";
 
 const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" }); // YYYY-MM-DD
 
+const RSS_FEEDS = [
+  "https://www.channelnewsasia.com/rssfeeds/8395744",  // CNA Singapore
+  "https://www.channelnewsasia.com/rssfeeds/8395986",  // CNA Asia
+  "https://mothership.sg/feed/",                        // Mothership
+];
+
 const SYSTEM_PROMPT = `You are the editor of "Current Affairs for Kids", a news site for 10-year-old children in Singapore (Primary 4-5, preparing for PSLE English).
 
-Your job: find today's most important and interesting news for Singapore, then rewrite each story so a 10-year-old fully understands it. Each summary must capture roughly 80% of what the child needs to know.
+Your job: select the most important and interesting news from the headlines provided, then rewrite each story so a 10-year-old fully understands it. Each summary must capture roughly 80% of what the child needs to know.
 
 Editorial rules:
 - Pick 5 stories. Prioritise: (1) news directly affecting daily life in Singapore (prices, school, transport, weather, health, safety), (2) major Singapore national news, (3) big world news explained through its impact on Singapore, (4) one lighter story about people, culture, sports or science.
@@ -37,7 +43,7 @@ Editorial rules:
 Output rules:
 - Output ONLY a single JSON object. No markdown fences, no commentary before or after.
 - Every id must be a short kebab-case slug unique within the file.
-- Include 2-3 real source articles per story with working URLs from your web searches.
+- For sources, use the publication name and URL from the RSS headlines provided.
 
 JSON schema:
 {
@@ -58,8 +64,8 @@ JSON schema:
         "nation": "what it means for Singapore",
         "world": "what it means for the world"
       },
-      "compo_words": [ { "word": "", "type": "noun/verb/adjective", "meaning": "", "example": "example sentence a P5 pupil could write" } ],  // exactly 6
-      "compo_phrases": [ { "phrase": "", "meaning": "", "example": "" } ],  // exactly 3 idioms/phrases
+      "compo_words": [ { "word": "", "type": "noun/verb/adjective", "meaning": "", "example": "example sentence a P5 pupil could write" } ],
+      "compo_phrases": [ { "phrase": "", "meaning": "", "example": "" } ],
       "oral": {
         "questions": ["3 PSLE-style stimulus-based conversation questions"],
         "phrases": ["5 useful sentence starters for answering aloud"]
@@ -69,13 +75,58 @@ JSON schema:
   ]
 }`;
 
+async function fetchRSS(url) {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(10000) });
+    if (!res.ok) return [];
+    const xml = await res.text();
+    const items = [];
+    const itemPattern = /<item>([\s\S]*?)<\/item>/g;
+    let m;
+    while ((m = itemPattern.exec(xml)) !== null) {
+      const block = m[1];
+      const title = (/<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?<\/title>/s.exec(block) || [])[1] || "";
+      const desc  = (/<description>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/description>/s.exec(block) || [])[1] || "";
+      const link  = (/<link>(.*?)<\/link>/.exec(block) || [])[1] || "";
+      if (title.trim()) items.push({
+        title: title.trim(),
+        description: desc.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 250),
+        url: link.trim(),
+      });
+    }
+    return items.slice(0, 15);
+  } catch {
+    return [];
+  }
+}
+
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) {
     console.error("ANTHROPIC_API_KEY is not set — aborting without changes.");
     process.exit(1);
   }
 
-  // Load recent story titles (~150 tokens) so the model avoids repeating them.
+  // Fetch RSS feeds in parallel
+  console.log("Fetching RSS feeds…");
+  const results = await Promise.all(RSS_FEEDS.map(fetchRSS));
+  const seen = new Set();
+  const items = results.flat().filter(i => {
+    if (seen.has(i.title)) return false;
+    seen.add(i.title);
+    return true;
+  }).slice(0, 25);
+
+  if (items.length === 0) {
+    console.error("No RSS items fetched — aborting without changes.");
+    process.exit(1);
+  }
+  console.log(`Fetched ${items.length} headlines from RSS.`);
+
+  const newsContext = items.map(i =>
+    `• ${i.title}${i.description ? ` — ${i.description}` : ""}${i.url ? ` [${i.url}]` : ""}`
+  ).join("\n");
+
+  // Load recent story titles so the model avoids repeating them (~150 tokens)
   let recentContext = "";
   try {
     const index = JSON.parse(fs.readFileSync(INDEX_PATH, "utf8"));
@@ -89,36 +140,24 @@ async function main() {
     if (lines.length) recentContext = `\n\nStories already published in the past 3 days — only cover a similar topic if there is a significant NEW development today:\n${lines.join("\n")}`;
   } catch {}
 
-  const USER_PROMPT = `Today's date in Singapore is ${today}. Search the web for today's top news relevant to Singapore — check sources like CNA, The Straits Times, Mothership, Today Online and major wire services. Then produce the JSON described in your instructions, with exactly 5 stories.${recentContext}`;
+  const USER_PROMPT = `Today's date in Singapore is ${today}.
+
+Here are today's latest Singapore news headlines:
+${newsContext}
+${recentContext}
+
+Pick exactly 5 stories from the headlines above and produce the JSON described in your instructions.`;
 
   const client = new Anthropic();
 
-  let messages = [{ role: "user", content: USER_PROMPT }];
-  let response;
-  let totalIn = 0, totalOut = 0;
+  const stream = client.messages.stream({
+    model: MODEL,
+    max_tokens: 10000,
+    system: SYSTEM_PROMPT,
+    messages: [{ role: "user", content: USER_PROMPT }],
+  });
+  const response = await stream.finalMessage();
 
-  // Web search runs in a server-side loop; on pause_turn, append the assistant
-  // turn and re-send so the server resumes where it left off.
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const stream = client.messages.stream({
-      model: MODEL,
-      max_tokens: 32000,
-      system: SYSTEM_PROMPT,
-      tools: [{ type: "web_search_20260209", name: "web_search", max_uses: 5 }],
-      messages,
-    });
-    response = await stream.finalMessage();
-    totalIn += response.usage.input_tokens;
-    totalOut += response.usage.output_tokens;
-
-    if (response.stop_reason !== "pause_turn") break;
-    messages = [...messages, { role: "assistant", content: response.content }];
-  }
-
-  if (response.stop_reason === "refusal") {
-    console.error("Model declined the request (stop_reason: refusal) — keeping existing news.json.");
-    process.exit(1);
-  }
   if (response.stop_reason === "max_tokens") {
     console.error("Output truncated (stop_reason: max_tokens) — keeping existing news.json.");
     process.exit(1);
@@ -142,12 +181,14 @@ async function main() {
   if (!index.includes(today)) index.unshift(today);
   fs.writeFileSync(INDEX_PATH, JSON.stringify(index.slice(0, 30), null, 2) + "\n");
   console.log(`index.json updated — ${index.length} date(s) available.`);
-  const costUSD = (totalIn / 1e6 * 2) + (totalOut / 1e6 * 10);
+
+  // Haiku 4.5 pricing: $1/M input, $5/M output
+  const { input_tokens: totalIn, output_tokens: totalOut } = response.usage;
+  const costUSD = (totalIn / 1e6 * 1) + (totalOut / 1e6 * 5);
   console.log(`Usage: in=${totalIn} out=${totalOut} — est. cost $${costUSD.toFixed(4)}`);
 }
 
 function extractJson(text) {
-  // Tolerate accidental markdown fences or preamble around the JSON object.
   const start = text.indexOf("{");
   const end = text.lastIndexOf("}");
   if (start === -1 || end === -1) throw new Error("No JSON object found in model output.");
