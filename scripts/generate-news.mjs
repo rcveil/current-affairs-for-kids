@@ -152,7 +152,7 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
 
   const stream = client.messages.stream({
     model: MODEL,
-    max_tokens: 12000,
+    max_tokens: 16000,
     system: SYSTEM_PROMPT,
     messages: [{ role: "user", content: USER_PROMPT }],
   });
