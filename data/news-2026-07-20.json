@@ -3,366 +3,362 @@
   "generated_by": "claude",
   "stories": [
     {
-      "id": "pools-app-overseas-loophole",
-      "emoji": "🎰",
-      "title": "Oops! People Are Betting on Singapore Pools From Overseas",
+      "id": "oil-prices-jump-iran-conflict",
+      "emoji": "⛽",
+      "title": "Fighting Overseas Could Make Petrol Pricier",
       "tag": "Money & Daily Life",
-      "headline_kid": "A news team discovered that people can use the Singapore Pools app to bet even when they are not in Singapore — even though the rules say they should not be able to!",
+      "headline_kid": "Trouble far away in the Middle East just pushed up the price of oil — and that could mean pricier petrol and bus rides here in Singapore.",
       "summary": [
-        "Singapore Pools is a company run by the government that lets people place bets on things like the lottery and football matches. But there is an important rule: you are only supposed to use the app while you are physically inside Singapore. This rule exists to help stop people from betting too much or losing control of their money, especially when they travel.",
-        "Reporters from CNA decided to test this rule. They brought the app with them to the United Kingdom and Italy, and to their surprise, they were able to place bets successfully in both countries! Other users say the same trick works from places like Thailand, Malaysia and China too.",
-        "This is a bit like a video game that is supposed to be locked to players in one country, but somehow people abroad still manage to play it. The app is meant to check your location and block you if you are overseas, but this 'location check' does not seem to be working properly.",
-        "This discovery raises questions about how well the rule is being enforced, and whether it needs to be fixed quickly. It is a good reminder that even carefully designed rules can have loopholes that clever people find ways around."
+        "The United States has been striking Iran for nine nights in a row. Over the weekend, a ship also caught fire near the Strait of Hormuz, a narrow sea passage where a huge share of the world's oil ships pass through, like a busy highway toll gate for oil tankers.",
+        "When people worry that oil tankers might not get through safely, the price of oil jumps up quickly. It's a bit like how the price of a popular toy shoots up when everyone worries there won't be enough to go around.",
+        "Singapore doesn't have its own oil wells, so almost all our fuel is bought from other countries. If oil becomes more expensive to buy, petrol at the pump, bus and train fares, and even cooking gas at home could slowly cost more too.",
+        "Nothing has changed for families just yet, but the government and energy companies are watching the situation closely. It's a good reminder of how something happening thousands of kilometres away can still reach into our pockets here."
       ],
       "lenses": {
-        "me": "Even though you're too young to bet, this shows why rules exist to protect people from spending money they can't afford to lose.",
-        "family": "Your parents might talk about why gambling rules matter and how families should manage money carefully.",
-        "friends": "You and your classmates might discuss whether it's fair for some people to get around rules using technology.",
-        "nation": "Singapore's gambling rules are meant to protect people, so a loophole like this could push authorities to tighten the system.",
-        "world": "It shows how tricky it can be for any country to control apps and technology once people travel across borders."
+        "me": "If your family drives you to school or tuition, petrol costing more could mean less pocket money for treats.",
+        "family": "Parents might notice higher bills for driving, or for grab rides and deliveries that use petrol.",
+        "friends": "You and your friends might hear grown-ups talking about 'oil prices' on the news at home.",
+        "nation": "Singapore imports all its energy, so world events like this can affect prices across the whole country.",
+        "world": "This shows how conflicts in one region can ripple out and affect ordinary people everywhere."
       },
       "compo_words": [
         {
-          "word": "loophole",
-          "type": "noun",
-          "meaning": "a gap or mistake in a rule that lets people avoid following it",
-          "example": "The clever student found a loophole in the school's homework rules."
-        },
-        {
-          "word": "enforce",
+          "word": "surge",
           "type": "verb",
-          "meaning": "to make sure a rule is followed",
-          "example": "The teacher enforced the no-phones rule strictly during exams."
+          "meaning": "to suddenly increase a lot",
+          "example": "Oil prices surged after the ship caught fire near the busy shipping lane."
         },
         {
-          "word": "vigilant",
+          "word": "disrupt",
+          "type": "verb",
+          "meaning": "to interrupt something so it cannot continue normally",
+          "example": "Fighting near the strait could disrupt oil shipments to many countries."
+        },
+        {
+          "word": "essential",
           "type": "adjective",
-          "meaning": "watchful and careful",
-          "example": "Being vigilant about spending helps you save your pocket money."
+          "meaning": "extremely important and necessary",
+          "example": "Oil is an essential resource that powers cars, buses and factories."
         }
       ],
       "compo_phrases": [
         {
-          "phrase": "close a loophole",
-          "meaning": "to fix a gap in a rule so people can no longer break it easily",
-          "example": "The company promised to close the loophole in its app."
+          "phrase": "ripple effect",
+          "meaning": "when one event causes a chain of smaller effects elsewhere",
+          "example": "The conflict overseas had a ripple effect on fuel prices in Singapore."
         },
         {
-          "phrase": "keep a tight rein on",
-          "meaning": "to control something very carefully",
-          "example": "Parents should keep a tight rein on how much pocket money is spent on games."
+          "phrase": "keep a close watch on",
+          "meaning": "to pay careful attention to something",
+          "example": "The government said it would keep a close watch on oil prices in the coming weeks."
         }
       ],
       "oral": {
         "questions": [
-          "Do you think it's fair for people to find clever ways around rules? Why or why not?",
-          "Have you ever seen someone break a small rule using a trick? What did you think about it?",
-          "Why do you think it's important for grown-ups to be careful with money and betting?"
+          "Have you ever noticed your parents talking about petrol or transport prices at home? What did they say?",
+          "Why do you think something happening far away, like fighting in another country, can affect prices in Singapore?",
+          "If bus and train fares became more expensive, how might that change the way your family gets around?"
         ],
         "phrases": [
-          "In my opinion, I feel that...",
-          "This reminds me of a time when...",
-          "I think this is important because...",
-          "One thing I would do differently is...",
-          "This shows that rules should be..."
+          "I think that...",
+          "In my opinion...",
+          "This reminds me of...",
+          "One reason for this could be...",
+          "If I were in this situation, I would..."
         ]
       },
       "sources": [
         {
-          "name": "CNA - Singapore Pools app can be used to bet from overseas",
-          "url": "https://www.channelnewsasia.com/singapore/singapore-pools-app-gambling-bets-overseas-6246171"
+          "name": "CNA - Oil jumps on Iran strikes, Hormuz shipping incident",
+          "url": "https://www.channelnewsasia.com/business/oil-prices-iran-us-strikes-hormuz-ship-hit-6264541"
         }
       ]
     },
     {
-      "id": "bangkok-bar-fire-toll-rises",
-      "emoji": "🔥",
-      "title": "Sad Update: Bangkok Bar Fire Death Toll Rises to 34",
-      "tag": "Weather & Travel",
-      "headline_kid": "More than a week after a fire broke out in a Bangkok bar, the number of people who have died has climbed to 34, and many are still fighting for their lives in hospital.",
+      "id": "singapore-ai-chatbot-nutrition-labels",
+      "emoji": "🏷️",
+      "title": "Singapore Wants AI Chatbots to Have 'Nutrition Labels'",
+      "tag": "Science & Tech",
+      "headline_kid": "Just like food packets show sugar and calories, Singapore wants AI chatbot apps to show a simple label about what they can and can't do.",
       "summary": [
-        "About a week ago, a terrible fire broke out inside a bar in Bangkok, Thailand's capital city. Sadly, the number of people who have died from their injuries keeps rising. On Sunday, a 20-year-old woman passed away in hospital, bringing the total number of deaths to 34.",
-        "Doctors say that 13 more people are still in intensive care, which means they are extremely unwell and need constant medical attention just to stay alive. This tragedy has shocked many people, both in Thailand and in nearby countries like Singapore, where many families love to holiday in Bangkok.",
-        "Fires in crowded places like bars and clubs are especially dangerous because there are often many people packed into a small space, and it can be hard for everyone to escape quickly if there aren't enough exits. This incident is a painful reminder of why fire safety rules — like having clear exit signs and enough fire extinguishers — are so important.",
-        "Investigators are still trying to figure out exactly what caused the fire. Many hope this tragedy will lead to stricter safety checks at nightlife venues across the region, so something like this never happens again."
+        "You've probably seen nutrition labels on snack packets, telling you how much sugar or salt is inside. Singapore's tech regulator, IMDA, now wants companies that make AI chatbots to create something similar — a simple label showing what the chatbot can do, how safe it is, and how it uses your personal information.",
+        "This matters because more and more students use AI chatbots to help with homework, ask questions, or even chat for fun. Right now, it can be hard to know exactly what a chatbot is doing with the things you type into it.",
+        "With a clear 'nutrition label', users could check this information in one place instead of hunting through long, confusing terms and conditions. IMDA is encouraging companies to adopt this, though it isn't a strict rule yet.",
+        "It's still important for kids to check with a parent or teacher before sharing personal details with any chatbot, label or no label — just like you'd check with an adult before trying a new food."
       ],
       "lenses": {
-        "me": "Whenever you visit a crowded place like a mall or cinema, it's good to notice where the exits are, just in case.",
-        "family": "Your family might talk about checking hotel and venue safety when planning holidays abroad.",
-        "friends": "You could chat with friends about why fire drills at school are actually really useful.",
-        "nation": "Singapore has strict fire safety laws for public venues, and this event is a reminder of why those rules matter so much.",
-        "world": "This tragedy may push governments across Southeast Asia to inspect nightlife venues more carefully."
+        "me": "Next time you use an AI chatbot for homework help, you might see a label explaining what it does with your information.",
+        "family": "Parents can use these labels to decide which apps are safe for their children to use.",
+        "friends": "Many of your classmates probably already use chatbots — this could make choosing a safe one easier for everyone.",
+        "nation": "Singapore is trying to lead the way in making AI safer and more trustworthy for everyday users.",
+        "world": "Other countries may look at Singapore's idea and consider using similar labels for their own AI apps."
       },
       "compo_words": [
         {
-          "word": "tragedy",
-          "type": "noun",
-          "meaning": "a very sad event, often involving death or great loss",
-          "example": "The fire was a terrible tragedy that shocked the whole city."
-        },
-        {
-          "word": "toll",
-          "type": "noun",
-          "meaning": "the total number of deaths or injuries from an event",
-          "example": "The death toll from the fire continued to rise."
-        },
-        {
-          "word": "vigilant",
+          "word": "transparent",
           "type": "adjective",
-          "meaning": "paying close attention to avoid danger",
-          "example": "Staff at the venue should have been more vigilant about fire risks."
+          "meaning": "easy to see through or understand clearly",
+          "example": "The new labels aim to make AI chatbots more transparent about how they use data."
+        },
+        {
+          "word": "guideline",
+          "type": "noun",
+          "meaning": "a rule or piece of advice on how something should be done",
+          "example": "IMDA released guidelines to help companies design clearer chatbot labels."
+        },
+        {
+          "word": "safeguard",
+          "type": "verb",
+          "meaning": "to protect something from harm",
+          "example": "The labels are meant to safeguard users' personal data."
         }
       ],
       "compo_phrases": [
         {
-          "phrase": "fight for their lives",
-          "meaning": "to be in a very serious medical condition, struggling to survive",
-          "example": "Doctors say several patients are still fighting for their lives in hospital."
+          "phrase": "peace of mind",
+          "meaning": "a feeling of being calm and free from worry",
+          "example": "A clear label can give parents peace of mind about which apps are safe."
+        },
+        {
+          "phrase": "before you leap",
+          "meaning": "think carefully before doing something",
+          "example": "Always check an app's label before you leap into using it."
+        }
+      ],
+      "oral": {
+        "questions": [
+          "Have you ever used an AI chatbot to help with your homework? What was that experience like?",
+          "Why do you think it's important to know how a chatbot uses your personal information?",
+          "Do you think a 'nutrition label' for apps would actually help you decide whether to use them? Why or why not?"
+        ],
+        "phrases": [
+          "From my experience...",
+          "I believe that...",
+          "This is important because...",
+          "On the other hand...",
+          "To conclude, I feel that..."
+        ]
+      },
+      "sources": [
+        {
+          "name": "CNA - Singapore launches 'nutrition label' guidelines for GenAI chatbots",
+          "url": "https://www.channelnewsasia.com/singapore/genai-ai-chatbot-nutrition-label-guidelines-data-6263571"
+        }
+      ]
+    },
+    {
+      "id": "strangers-accompany-lonely-seniors",
+      "emoji": "🕊️",
+      "title": "The Kind Strangers Who Say Goodbye to Lonely Seniors",
+      "tag": "People & Culture",
+      "headline_kid": "In Singapore, kind volunteers and social workers are stepping in to give lonely elderly people a caring farewell when they have no family nearby.",
+      "summary": [
+        "Singapore's population is growing older, and families are getting smaller. This means more elderly people are reaching the end of their lives without children or relatives close by to care for them.",
+        "To help, a quiet network of charities, social workers and funeral directors has grown. They visit lonely seniors, sit with them, and make sure that even those without family are treated with dignity and care until their very last moments.",
+        "One example is the Cheng Hong Welfare Service Society, where volunteers attend cremation services for people who have 'no next of kin' — meaning no family members were able to be found or were around to help. These strangers make sure no one is forgotten.",
+        "This story reminds us that kindness doesn't need to come only from family. Sometimes, caring strangers can step up to make sure everyone is treated with respect, right to the end."
+      ],
+      "lenses": {
+        "me": "It reminds me to appreciate my own family and maybe visit an elderly relative or neighbour more often.",
+        "family": "Families might think about how they can support elderly relatives or neighbours who live alone.",
+        "friends": "You and your classmates could join school community service projects that involve visiting the elderly.",
+        "nation": "As Singapore's population ages, more support systems like this may be needed in the future.",
+        "world": "Many countries with ageing populations face similar challenges, and are looking for similar caring solutions."
+      },
+      "compo_words": [
+        {
+          "word": "dignity",
+          "type": "noun",
+          "meaning": "the quality of being worthy of respect",
+          "example": "The volunteers made sure every senior was treated with dignity."
+        },
+        {
+          "word": "compassion",
+          "type": "noun",
+          "meaning": "a strong feeling of caring about someone's suffering",
+          "example": "The social workers showed great compassion towards the lonely elderly."
+        },
+        {
+          "word": "companionship",
+          "type": "noun",
+          "meaning": "the feeling of friendship or comfort from being with others",
+          "example": "Volunteers offered companionship to seniors who had no family nearby."
+        }
+      ],
+      "compo_phrases": [
+        {
+          "phrase": "lend a helping hand",
+          "meaning": "to offer help to someone",
+          "example": "The charity workers lent a helping hand to elderly people with no family."
+        },
+        {
+          "phrase": "no one should feel alone",
+          "meaning": "everyone deserves care and company",
+          "example": "The volunteers believe no one should feel alone at the end of their life."
+        }
+      ],
+      "oral": {
+        "questions": [
+          "How do you think it would feel to have no family around you when you are very old?",
+          "What are some small ways you could show kindness to elderly people in your neighbourhood?",
+          "Why do you think it's important for a society to care for people who have no family?"
+        ],
+        "phrases": [
+          "I feel that...",
+          "This makes me think about...",
+          "It is touching that...",
+          "I would like to...",
+          "In my opinion, this shows that..."
+        ]
+      },
+      "sources": [
+        {
+          "name": "CNA - Dignity in death: The strangers who accompany seniors on their final journey",
+          "url": "https://www.channelnewsasia.com/singapore/strangers-accompany-seniors-final-journey-6261226"
+        }
+      ]
+    },
+    {
+      "id": "laos-tainted-alcohol-tourist-deaths",
+      "emoji": "🍹",
+      "title": "Laos Can't Explain Why Tourists Died From Bad Drinks",
+      "tag": "Weather & Travel",
+      "headline_kid": "Laos says it still can't figure out exactly why six tourists died after drinking alcohol on a night out — a reminder to always be careful with drinks when travelling.",
+      "summary": [
+        "Back in 2024, six tourists — including people from Denmark, the US, Britain and Australia — died in the town of Vang Vieng in Laos, a popular backpacker spot. Reports said their deaths were linked to alcohol that may have contained methanol, a dangerous chemical that can be deadly even in small amounts.",
+        "Methanol looks and smells similar to normal drinking alcohol, but it is actually a toxic substance sometimes mixed into cheap drinks by accident or to save money. Even a small amount can make someone very sick or worse.",
+        "Laos authorities say they still cannot officially confirm the cause of these deaths because the victims' families did not allow autopsies (medical examinations) to be done. This means the full mystery may never be solved.",
+        "This sad story is a good reminder for anyone travelling, including Singaporean families on holiday, to be extra careful about where drinks come from, especially in places where alcohol isn't tightly checked."
+      ],
+      "lenses": {
+        "me": "If you travel with your family one day, this is a reminder to always check with your parents before trying any drink.",
+        "family": "Parents planning holidays abroad might pay closer attention to travel advisories about food and drink safety.",
+        "friends": "You could share this story with friends as a lesson about staying safe when travelling.",
+        "nation": "Singapore's government issues travel advisories to warn citizens about risks like this in other countries.",
+        "world": "This has become a well-known safety concern in Southeast Asia's popular backpacker destinations."
+      },
+      "compo_words": [
+        {
+          "word": "toxic",
+          "type": "adjective",
+          "meaning": "poisonous and harmful to health",
+          "example": "Methanol is a toxic chemical that should never be in drinks."
+        },
+        {
+          "word": "caution",
+          "type": "noun",
+          "meaning": "care taken to avoid danger",
+          "example": "Travellers should exercise caution when buying drinks from unfamiliar places."
+        },
+        {
+          "word": "advisory",
+          "type": "noun",
+          "meaning": "an official warning or piece of advice",
+          "example": "The government issued a travel advisory about risks in the region."
+        }
+      ],
+      "compo_phrases": [
+        {
+          "phrase": "better safe than sorry",
+          "meaning": "it is wiser to be cautious than to regret later",
+          "example": "When it comes to unfamiliar drinks abroad, it's better safe than sorry."
         },
         {
           "phrase": "raise the alarm",
-          "meaning": "to warn people quickly about danger",
-          "example": "A worker raised the alarm as soon as she saw smoke."
+          "meaning": "to warn people about a danger",
+          "example": "Health officials raised the alarm after several tourists fell seriously ill."
         }
       ],
       "oral": {
         "questions": [
-          "Why do you think it's important to know where the fire exits are when you visit a new place?",
-          "How would you feel if you heard about a tragedy like this happening somewhere you had visited before?",
-          "What can building owners do to keep crowded places safer?"
+          "Why do you think it's important to be careful about food and drinks when travelling to a new country?",
+          "How do you think families can stay safe while enjoying a holiday abroad?",
+          "What would you do if you felt unwell after eating or drinking something while travelling?"
         ],
         "phrases": [
-          "This makes me feel...",
-          "I believe it's important because...",
-          "If I were in that situation, I would...",
-          "This reminds me that we should always...",
-          "One lesson we can learn from this is..."
+          "I think it's important to...",
+          "One thing I would do is...",
+          "This story teaches us that...",
+          "It's worrying because...",
+          "To stay safe, I would..."
         ]
       },
       "sources": [
         {
-          "name": "CNA - Woman dies week after Bangkok bar fire, raising toll to 34",
-          "url": "https://www.channelnewsasia.com/asia/woman-dies-week-after-bangkok-bar-fire-raising-toll-34-6263496"
+          "name": "CNA - Laos says cannot determine cause of tourist deaths linked to tainted alcohol",
+          "url": "https://www.channelnewsasia.com/asia/laos-authorities-cannot-determine-tourist-death-linked-tainted-alcohol-6262581"
         }
       ]
     },
     {
-      "id": "telegram-scam-lessons-india",
-      "emoji": "📱",
-      "title": "How Scammers Hide Behind a Popular Chat App",
-      "tag": "Singapore & The World",
-      "headline_kid": "Investigators in India say scammers love using a chat app called Telegram to cheat people — and Asia, including Singapore, can learn how to fight back.",
-      "summary": [
-        "Telegram is a messaging app a bit like WhatsApp, but it lets people create huge, sometimes secret groups where members don't always know each other. In India, investigators found that scammers have used Telegram again and again — from leaking exam papers before students take them, to tricking people into fake 'get-rich-quick' investment schemes.",
-        "Why do scammers love this app so much? Investigators explain that messages on Telegram can be heavily encrypted, which means they're scrambled and very hard for police to read or trace back to a real person. This lets scammers hide their identity while still reaching thousands of victims at once.",
-        "This isn't just India's problem. Singapore has also seen scams that start with strangers messaging people on chat apps, promising 'guaranteed' profits or offering suspicious deals. Scam awareness campaigns here often remind people never to trust messages promising money for nothing.",
-        "Experts believe Asian countries, including Singapore, can learn from how India is cracking down on this — for example, working closely with tech companies to trace scammers faster and teaching the public how to spot warning signs early."
-      ],
-      "lenses": {
-        "me": "If a stranger ever messages you about 'easy money' or 'secret answers,' that's usually a big red flag — tell a trusted adult right away.",
-        "family": "Your parents can talk with you about never sharing bank details, passwords or OTPs with anyone online, even if they seem friendly.",
-        "friends": "Classmates might get added to chat groups promising game cheats or free items — it's good to be cautious about these.",
-        "nation": "Singapore regularly sends out anti-scam alerts, and this story shows why staying alert to new scam tricks really matters.",
-        "world": "It shows that scam networks often work across many countries, so nations need to cooperate to catch them."
-      },
-      "compo_words": [
-        {
-          "word": "encrypted",
-          "type": "adjective",
-          "meaning": "scrambled or coded so it's hard to read without special access",
-          "example": "The scammers used encrypted messages so police couldn't easily trace them."
-        },
-        {
-          "word": "fraudulent",
-          "type": "adjective",
-          "meaning": "dishonest and meant to trick people",
-          "example": "The investment scheme turned out to be completely fraudulent."
-        },
-        {
-          "word": "vigilant",
-          "type": "adjective",
-          "meaning": "carefully watching out for danger or trouble",
-          "example": "We must stay vigilant about strange messages from unknown numbers."
-        }
-      ],
-      "compo_phrases": [
-        {
-          "phrase": "too good to be true",
-          "meaning": "something that sounds so amazing it's probably a trick",
-          "example": "A stranger offering free money online is often too good to be true."
-        },
-        {
-          "phrase": "crack down on",
-          "meaning": "to take strong action to stop something bad",
-          "example": "Police are cracking down on scam networks using chat apps."
-        }
-      ],
-      "oral": {
-        "questions": [
-          "Have you or someone you know ever received a suspicious message online? What did you do?",
-          "Why do you think scammers prefer using messaging apps to trick people?",
-          "What would you tell a friend who wanted to join a chat group promising 'easy money'?"
-        ],
-        "phrases": [
-          "I would feel suspicious if...",
-          "This is a good reminder to...",
-          "In my opinion, the best way to stay safe is...",
-          "I think people should always...",
-          "If this happened to me, I would..."
-        ]
-      },
-      "sources": [
-        {
-          "name": "CNA - Inside India's cybercrime investigations",
-          "url": "https://www.channelnewsasia.com/asia/inside-indias-cybercrime-investigations-how-scammers-exploit-telegram-6260666"
-        }
-      ]
-    },
-    {
-      "id": "indonesia-boat-sinking-survivors",
-      "emoji": "🚤",
-      "title": "Rescued! Survivors Found Days After Boat Sinks Near Indonesia",
-      "tag": "Nature & Environment",
-      "headline_kid": "After a boat sank near Indonesia's Selayar Islands, rescuers found survivors — some floating in the sea, and others stranded on an empty island with no one living there!",
-      "summary": [
-        "A boat carrying passengers sank near the Selayar Islands, off South Sulawesi in Indonesia. In the days that followed, rescue teams worked hard to search the surrounding waters for anyone who might still be alive.",
-        "On Saturday, rescuers found five survivors floating in the sea, likely staying afloat using life jackets or pieces of debris from the boat. Then on Sunday, two more survivors were discovered — this time on an uninhabited island, meaning an island where nobody normally lives.",
-        "Rescue teams used boats and search planes to cover a wide stretch of ocean, showing just how challenging and important sea rescues can be. Stories like this highlight why safety equipment, such as life jackets, and quick emergency responses can truly save lives.",
-        "This is also a gentle reminder for families who love visiting Indonesian islands for holidays — always listen carefully to safety briefings before boarding any boat, no matter how short the trip seems."
-      ],
-      "lenses": {
-        "me": "It's a good reminder to always wear a life jacket properly if you ever go on a boat trip.",
-        "family": "Your family can make it a habit to check safety equipment before any boat or ferry ride during holidays.",
-        "friends": "You could talk with friends about what they would do if they were ever stranded and needed to stay calm.",
-        "nation": "Singapore, being close to Indonesia, often cooperates on sea rescue and safety efforts in the region.",
-        "world": "This story shows how challenging sea rescues can be, and why safety rules for boats matter everywhere."
-      },
-      "compo_words": [
-        {
-          "word": "uninhabited",
-          "type": "adjective",
-          "meaning": "a place where no people live",
-          "example": "The survivors were found stranded on an uninhabited island."
-        },
-        {
-          "word": "resilient",
-          "type": "adjective",
-          "meaning": "able to recover quickly from difficulties",
-          "example": "The survivors showed how resilient people can be in a crisis."
-        },
-        {
-          "word": "stranded",
-          "type": "adjective",
-          "meaning": "left in a place with no way to leave",
-          "example": "They were stranded at sea for days before help arrived."
-        }
-      ],
-      "compo_phrases": [
-        {
-          "phrase": "against all odds",
-          "meaning": "despite very difficult circumstances",
-          "example": "Against all odds, the survivors were found alive after days at sea."
-        },
-        {
-          "phrase": "race against time",
-          "meaning": "to try to do something quickly before it's too late",
-          "example": "Rescuers were in a race against time to find the missing passengers."
-        }
-      ],
-      "oral": {
-        "questions": [
-          "Why do you think it's important to always listen to safety instructions before a boat trip?",
-          "How do you think the survivors must have felt while waiting to be rescued?",
-          "What would you pack if you were going on a boat trip, just in case of an emergency?"
-        ],
-        "phrases": [
-          "I imagine they must have felt...",
-          "This teaches us the importance of...",
-          "If I were in that situation, I would try to...",
-          "It's amazing that...",
-          "This story reminds me to always..."
-        ]
-      },
-      "sources": [
-        {
-          "name": "CNA - Survivors of Indonesia boat sinking found on island, floating at sea",
-          "url": "https://www.channelnewsasia.com/asia/indonesia-boat-sinking-selayar-islands-south-sulawesi-makassar-6263516"
-        }
-      ]
-    },
-    {
-      "id": "spain-wins-world-cup-2026",
-      "emoji": "🏆",
-      "title": "Spain Wins the World Cup After a Dramatic Final!",
+      "id": "singapore-basketball-match-fixing-ban",
+      "emoji": "🏀",
+      "title": "Two Singapore Basketball Players Banned Forever for Cheating",
       "tag": "Sports",
-      "headline_kid": "Spain beat Argentina 1-0 in extra time to become World Cup champions, in a final packed with drama, a red card, and a booing crowd!",
+      "headline_kid": "Two players from a Singapore basketball club have been banned for life after they were caught secretly cheating in a game.",
       "summary": [
-        "Spain has won the World Cup, beating Argentina 1-0 after the match went into extra time. This means the game finished level after the normal 90 minutes, so both teams had to play an extra 30 minutes to decide the winner.",
-        "The final got even more dramatic when Argentina had a player sent off with a red card, leaving them to finish the match with only 10 players instead of 11 — a huge disadvantage in football. After the final whistle, tempers flared briefly between players, though things soon calmed down.",
-        "During the trophy ceremony, the crowd loudly booed as US President Donald Trump and FIFA president Gianni Infantino walked onto the field. Big sporting events like the World Cup often draw strong reactions from fans, especially when political figures are involved.",
-        "Even in Singapore, football fans stayed up late or gathered at coffee shops and homes to watch the final together, cheering, gasping, and celebrating with friends and family — proof that football truly brings people together, no matter where they live."
+        "Two players, Oleksandr Kolchenko and Sergii Pryimak, played for a Singapore basketball club called Adroit. They were found to have manipulated — or secretly fixed — a match against a team from Taiwan, meaning they deliberately played worse than they could to change the result.",
+        "This kind of cheating is often connected to illegal betting, where people place money bets on games and want to control the outcome. It's a serious form of cheating because it breaks the trust that fans, teammates and opponents have in fair competition.",
+        "FIBA, the organisation that governs basketball around the world, handed both players lifetime bans. This means they can never play organised basketball again anywhere in the world.",
+        "The Basketball Association of Singapore said this behaviour badly hurt the spirit of fair play and Singapore basketball's good name. It's a strong reminder that honesty matters just as much as skill in sports."
       ],
       "lenses": {
-        "me": "Think about your own favourite football moments — did you stay up to watch this final too?",
-        "family": "Many families in Singapore probably watched the match together late at night, sharing snacks and excitement.",
-        "friends": "You and your classmates are probably still talking about the match and the dramatic ending at school.",
-        "nation": "Football is hugely popular in Singapore, and big matches like this often unite fans across the country.",
-        "world": "The World Cup happens once every four years and brings together countries from around the globe in friendly competition."
+        "me": "It reminds me that playing fair matters more than winning, whether in sports or games with friends.",
+        "family": "Your family might talk about why cheating in sports is unfair to everyone who plays by the rules.",
+        "friends": "If you play basketball or any sport with friends, this is a good example of why fair play matters.",
+        "nation": "This case affects how other countries see Singapore's sports scene and its commitment to fairness.",
+        "world": "Match-fixing is a problem in sports around the world, and strong punishments help discourage it."
       },
       "compo_words": [
         {
-          "word": "dramatic",
-          "type": "adjective",
-          "meaning": "exciting and full of tension",
-          "example": "The dramatic final kept fans on the edge of their seats."
+          "word": "manipulate",
+          "type": "verb",
+          "meaning": "to control or influence something unfairly",
+          "example": "The players were caught trying to manipulate the result of the match."
         },
         {
-          "word": "disadvantage",
+          "word": "integrity",
           "type": "noun",
-          "meaning": "a condition that puts someone at a weaker position",
-          "example": "Playing with 10 men put Argentina at a huge disadvantage."
+          "meaning": "being honest and having strong moral principles",
+          "example": "Fair play depends on the integrity of every athlete."
         },
         {
-          "word": "triumphant",
-          "type": "adjective",
-          "meaning": "feeling or showing great joy at a victory",
-          "example": "The Spanish players were triumphant after lifting the trophy."
+          "word": "tarnish",
+          "type": "verb",
+          "meaning": "to damage someone's good reputation",
+          "example": "The scandal tarnished the reputation of Singapore basketball."
         }
       ],
       "compo_phrases": [
         {
-          "phrase": "tempers flared",
-          "meaning": "people suddenly became angry or upset",
-          "example": "Tempers flared between players after the final whistle."
+          "phrase": "play by the rules",
+          "meaning": "to follow rules honestly and fairly",
+          "example": "Every athlete should play by the rules, no matter how badly they want to win."
         },
         {
-          "phrase": "against the odds",
-          "meaning": "despite being unlikely to succeed",
-          "example": "Spain fought hard against the odds after Argentina had 11 players."
+          "phrase": "put a dent in",
+          "meaning": "to damage or weaken something",
+          "example": "The scandal put a dent in the reputation of the local basketball league."
         }
       ],
       "oral": {
         "questions": [
-          "Did you watch the World Cup final? What was your favourite moment?",
-          "Why do you think sports events like the World Cup can bring people together?",
-          "How do you think it feels to play with fewer players than the other team, like Argentina did?"
+          "Why do you think fair play is important in sports and games?",
+          "How would you feel if you found out a game you watched was secretly fixed?",
+          "What would you say to a friend who wanted to cheat to win a game?"
         ],
         "phrases": [
-          "My favourite part was...",
-          "I think sports can unite people because...",
-          "If I were a player, I would feel...",
-          "This match reminds me of...",
-          "I was surprised when..."
+          "I strongly believe that...",
+          "This is unfair because...",
+          "If I were the coach, I would...",
+          "It's important to remember that...",
+          "In my view..."
         ]
       },
       "sources": [
         {
-          "name": "CNA - Spain battle past 10-man Argentina 1-0 in extra time to win World Cup",
-          "url": "https://www.channelnewsasia.com/sport/spain-battle-past-10-man-argentina-1-0-in-extra-time-win-world-cup-6264161"
-        },
-        {
-          "name": "CNA - Boos as Trump and Infantino enter the field",
-          "url": "https://www.channelnewsasia.com/sport/boos-trump-and-infantino-enter-field-world-cup-trophy-ceremony-6264246"
+          "name": "CNA - Two Singapore basketball club players handed lifetime FIBA bans over match manipulation",
+          "url": "https://www.channelnewsasia.com/sport/basketball-association-singapore-club-players-fiba-ban-match-fixing-6264341"
         }
       ]
     }
