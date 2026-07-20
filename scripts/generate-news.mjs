@@ -4,8 +4,9 @@
  * Composition & Oral vocabulary.
  *
  * Runs daily via .github/workflows/update-news.yml. Requires ANTHROPIC_API_KEY.
- * News is sourced from public RSS feeds (CNA, Mothership) — no web_search tool,
- * which avoids expensive output-token billing for search results.
+ * News is sourced from public RSS feeds (CNA, Mothership). After collecting
+ * headlines, the script fetches full article text client-side (cheap input tokens)
+ * so Claude can curate based on actual content, not just 250-char snippets.
  */
 
 import Anthropic from "@anthropic-ai/sdk";
@@ -100,6 +101,45 @@ async function fetchRSS(url) {
   }
 }
 
+async function fetchArticleText(url) {
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(8000),
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; CurrentAffairsBot/1.0)" },
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+
+    // Strip noisy structural elements and their content
+    const cleaned = html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<nav[\s\S]*?<\/nav>/gi, " ")
+      .replace(/<header[\s\S]*?<\/header>/gi, " ")
+      .replace(/<footer[\s\S]*?<\/footer>/gi, " ")
+      .replace(/<aside[\s\S]*?<\/aside>/gi, " ")
+      .replace(/<!--[\s\S]*?-->/g, " ");
+
+    // Pull paragraph text
+    const paragraphs = [];
+    const pPattern = /<p[^>]*>([\s\S]*?)<\/p>/gi;
+    let m;
+    while ((m = pPattern.exec(cleaned)) !== null) {
+      const p = m[1]
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&[a-z#0-9]+;/gi, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+      if (p.length > 50) paragraphs.push(p);
+    }
+
+    const text = paragraphs.join(" ").slice(0, 1000);
+    return text.length > 100 ? text : null;
+  } catch {
+    return null;
+  }
+}
+
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) {
     console.error("ANTHROPIC_API_KEY is not set — aborting without changes.");
@@ -122,9 +162,16 @@ async function main() {
   }
   console.log(`Fetched ${items.length} headlines from RSS.`);
 
-  const newsContext = items.map(i =>
-    `• ${i.title}${i.description ? ` — ${i.description}` : ""}${i.url ? ` [${i.url}]` : ""}`
-  ).join("\n");
+  // Fetch full article text in parallel so Claude can curate on content, not just snippets
+  console.log("Fetching full article text…");
+  const articleTexts = await Promise.all(items.map(i => i.url ? fetchArticleText(i.url) : Promise.resolve(null)));
+  const fetched = articleTexts.filter(Boolean).length;
+  console.log(`Article text fetched for ${fetched}/${items.length} items.`);
+
+  const newsContext = items.map((i, idx) => {
+    const article = articleTexts[idx];
+    return `• ${i.title}${i.description ? ` — ${i.description}` : ""}${i.url ? ` [${i.url}]` : ""}${article ? `\n  Article excerpt: ${article}` : ""}`;
+  }).join("\n\n");
 
   // Load recent story titles so the model avoids repeating them (~150 tokens)
   let recentContext = "";
@@ -142,7 +189,7 @@ async function main() {
 
   const USER_PROMPT = `Today's date in Singapore is ${today}.
 
-Here are today's latest Singapore news headlines:
+Here are today's latest Singapore news headlines with article excerpts:
 ${newsContext}
 ${recentContext}
 
@@ -182,7 +229,8 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
   fs.writeFileSync(INDEX_PATH, JSON.stringify(index.slice(0, 30), null, 2) + "\n");
   console.log(`index.json updated — ${index.length} date(s) available.`);
 
-  // Sonnet 5 pricing: $2/M input, $10/M output (intro through 2026-08-31, then $3/$15)
+  // Sonnet 5 intro pricing: $2/M input, $10/M output (through 2026-08-31, then $3/$15)
+  // Article fetch adds ~5-8K input tokens ($0.01-0.02) for much better curation quality
   const { input_tokens: totalIn, output_tokens: totalOut } = response.usage;
   const costUSD = (totalIn / 1e6 * 2) + (totalOut / 1e6 * 10);
   console.log(`Usage: in=${totalIn} out=${totalOut} — est. cost $${costUSD.toFixed(4)}`);
