@@ -196,7 +196,6 @@ function bindCardFavBtns(storiesByDate) {
 
 async function renderHome(date) {
   app.innerHTML = `<div class="loading"><div class="loading-emoji">📰</div><p>Loading stories…</p></div>`;
-  calMonth = date.slice(0, 7);
 
   const [data, allDates] = await Promise.all([
     loadStories(date).catch(() => null),
@@ -489,12 +488,13 @@ async function route() {
 
   // #/date/YYYY-MM-DD
   const dateMatch = hash.match(/^#\/date\/(\d{4}-\d{2}-\d{2})$/);
-  if (dateMatch) { await renderHome(dateMatch[1]); return; }
+  if (dateMatch) { calMonth = dateMatch[1].slice(0, 7); await renderHome(dateMatch[1]); return; }
 
   // #/favorites
   if (hash === "#/favorites") { await renderFavourites(); return; }
 
   // #/ (default — today)
+  calMonth = TODAY.slice(0, 7);
   await renderHome(TODAY);
 }
 
