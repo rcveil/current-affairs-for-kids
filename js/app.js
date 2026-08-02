@@ -4,6 +4,7 @@
 const app = document.getElementById("app");
 const TODAY = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" }); // YYYY-MM-DD
 let calMonth = TODAY.slice(0, 7); // "YYYY-MM" — which month the calendar shows
+let calRerenderFn = null; // current page's rerender callback for month nav
 
 const LENSES = [
   { key: "me",      label: "For Me",          emoji: "🧒",          cls: "lens-me" },
@@ -150,12 +151,7 @@ function renderCalendarNav(availableDates, activeDate) {
 }
 
 function bindCalendarNav(rerenderFn) {
-  document.querySelectorAll(".cal-month-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      calMonth = btn.dataset.month;
-      rerenderFn();
-    });
-  });
+  calRerenderFn = rerenderFn;
 }
 
 // --- Fav button helpers ---
@@ -497,6 +493,16 @@ async function route() {
   calMonth = TODAY.slice(0, 7);
   await renderHome(TODAY);
 }
+
+// Single delegated handler for calendar month arrows — registered once so Safari
+// doesn't lose it when innerHTML is replaced during async re-renders.
+document.addEventListener("click", e => {
+  const btn = e.target.closest(".cal-month-btn");
+  if (btn && calRerenderFn) {
+    calMonth = btn.dataset.month;
+    calRerenderFn();
+  }
+});
 
 window.addEventListener("hashchange", route);
 route();
