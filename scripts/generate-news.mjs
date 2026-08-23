@@ -40,6 +40,7 @@ Editorial rules:
 - Vocabulary must match Singapore MOE PSLE English standards: "power words" and idioms a Primary 5 pupil could realistically use in Continuous Writing (Paper 1) and Oral (stimulus-based conversation).
 - Oral questions must sound like real PSLE stimulus-based conversation prompts: personal, opinion-based, connected to the child's own life.
 - The five "lenses" must be concrete and specific to the story, not generic filler.
+- cloze_prep targets PSLE Paper 2 Comprehension Cloze, which uses passages adapted from newspaper articles — formal, impersonal, with complex sentence structures and no word bank. Include: (a) 3 formal vocabulary words as they appear in newspaper register, each with a fixed collocation (e.g. "implement a measure"), plain meaning, and a formal newspaper-style example sentence; (b) 3 connectives relevant to the story's topic (e.g. consequently, nevertheless, in addition) each with a concise meaning; (c) a mini cloze passage of 2-3 sentences in newspaper register about this story's topic — use ___1___, ___2___, ___3___ for the three blanks — and provide the three answers. The mini cloze passage must read like a real Straits Times article excerpt.
 
 Output rules:
 - Output ONLY a single JSON object. No markdown fences, no commentary before or after.
@@ -70,6 +71,18 @@ JSON schema:
       "oral": {
         "questions": ["3 PSLE-style stimulus-based conversation questions"],
         "phrases": ["5 useful sentence starters for answering aloud"]
+      },
+      "cloze_prep": {
+        "formal_words": [
+          { "word": "", "collocation": "e.g. implement a measure", "meaning": "", "example": "formal newspaper-style sentence" }
+        ],
+        "connectives": [
+          { "word": "", "meaning": "" }
+        ],
+        "mini_cloze": {
+          "passage": "2-3 sentences in newspaper register with blanks marked ___1___, ___2___, ___3___",
+          "answers": ["answer 1", "answer 2", "answer 3"]
+        }
       },
       "sources": [ { "name": "publication + short title", "url": "" } ]
     }
@@ -206,7 +219,7 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
   for (let attempt = 1; attempt <= 2; attempt++) {
     const stream = client.messages.stream({
       model: MODEL,
-      max_tokens: 16000,
+      max_tokens: 20000,
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: USER_PROMPT }],
     });

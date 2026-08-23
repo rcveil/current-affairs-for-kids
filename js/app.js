@@ -432,6 +432,43 @@ async function renderStory(date, id) {
       </div>
     </div>
 
+    ${s.cloze_prep ? (() => {
+      const cp = s.cloze_prep;
+      const formalWords = (cp.formal_words || []).map(w => `
+        <div class="vocab-item cloze-word-item">
+          <div class="vocab-row">
+            <span class="word">${esc(w.word)}</span>
+          </div>
+          <div class="cloze-collocation">📎 ${esc(w.collocation)}</div>
+          <div class="meaning">${esc(w.meaning)}</div>
+          <div class="example">${esc(w.example)}</div>
+        </div>`).join("");
+      const connectives = (cp.connectives || []).map(c => `
+        <div class="connective-chip">
+          <span class="connective-word">${esc(c.word)}</span>
+          <span class="connective-meaning">${esc(c.meaning)}</span>
+        </div>`).join("");
+      const mc = cp.mini_cloze || {};
+      const passage = (mc.passage || "").replace(/___(\d+)___/g, (_, n) => `<span class="cloze-blank">___${n}___</span>`);
+      const answers = (mc.answers || []).map((a, i) => `<span class="cloze-answer">(${i + 1}) ${esc(a)}</span>`).join("");
+      return `
+        <div class="section cloze-section">
+          <h2>📰 Cloze Prep — Newspaper English</h2>
+          <p class="cloze-intro">PSLE Paper 2 Cloze passages come from newspaper articles. Practise these formal words, connectives, and the mini cloze below — no word bank!</p>
+          <h3 class="cloze-subheading">Formal Words &amp; Collocations</h3>
+          <div class="vocab-list">${formalWords}</div>
+          <h3 class="cloze-subheading">Connectives</h3>
+          <div class="connectives-list">${connectives}</div>
+          <h3 class="cloze-subheading">Mini Cloze</h3>
+          <p class="cloze-hint">Fill in the 3 blanks, then tap to check.</p>
+          <div class="mini-cloze-passage">${passage}</div>
+          <details class="cloze-answers-block">
+            <summary>Show Answers</summary>
+            <div class="cloze-answers-list">${answers}</div>
+          </details>
+        </div>`;
+    })() : ""}
+
     ${sources ? `
     <div class="section sources">
       <h2>🔗 Read More (with a grown-up)</h2>
