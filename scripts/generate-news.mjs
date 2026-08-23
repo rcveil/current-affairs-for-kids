@@ -133,7 +133,11 @@ async function fetchArticleText(url) {
       if (p.length > 50) paragraphs.push(p);
     }
 
-    const text = paragraphs.join(" ").slice(0, 1000);
+    const text = paragraphs.join(" ")
+      .replace(/[\x00-\x1f\x7f]/g, " ")  // strip control chars that break JSON strings
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 1000);
     return text.length > 100 ? text : null;
   } catch {
     return null;
@@ -197,26 +201,37 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
 
   const client = new Anthropic();
 
-  const stream = client.messages.stream({
-    model: MODEL,
-    max_tokens: 16000,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: "user", content: USER_PROMPT }],
-  });
-  const response = await stream.finalMessage();
+  let data;
+  let lastUsage;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const stream = client.messages.stream({
+      model: MODEL,
+      max_tokens: 16000,
+      system: SYSTEM_PROMPT,
+      messages: [{ role: "user", content: USER_PROMPT }],
+    });
+    const response = await stream.finalMessage();
 
-  if (response.stop_reason === "max_tokens") {
-    console.error("Output truncated (stop_reason: max_tokens) — keeping existing news.json.");
-    process.exit(1);
+    if (response.stop_reason === "max_tokens") {
+      console.error("Output truncated (stop_reason: max_tokens) — keeping existing news.json.");
+      process.exit(1);
+    }
+
+    const text = response.content
+      .filter((b) => b.type === "text")
+      .map((b) => b.text)
+      .join("\n");
+
+    lastUsage = response.usage;
+    try {
+      data = extractJson(text);
+      validate(data);
+      break;
+    } catch (err) {
+      if (attempt === 2) throw err;
+      console.warn(`Attempt ${attempt} produced invalid output (${err.message}) — retrying…`);
+    }
   }
-
-  const text = response.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("\n");
-
-  const data = extractJson(text);
-  validate(data);
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(data, null, 2) + "\n");
   fs.writeFileSync(DATED_PATH, JSON.stringify(data, null, 2) + "\n");
@@ -231,7 +246,7 @@ Pick exactly 5 stories from the headlines above and produce the JSON described i
 
   // Sonnet 5 intro pricing: $2/M input, $10/M output (through 2026-08-31, then $3/$15)
   // Article fetch adds ~5-8K input tokens ($0.01-0.02) for much better curation quality
-  const { input_tokens: totalIn, output_tokens: totalOut } = response.usage;
+  const { input_tokens: totalIn, output_tokens: totalOut } = lastUsage;
   const costUSD = (totalIn / 1e6 * 2) + (totalOut / 1e6 * 10);
   console.log(`Usage: in=${totalIn} out=${totalOut} — est. cost $${costUSD.toFixed(4)}`);
 }
